@@ -1,0 +1,406 @@
+{
+    "lungNodes": [
+        {
+            "nodesToFollow": [1, 5],
+            "node": 0,
+            "name": "Lung Cancer"
+        },
+        {
+            "nodesToFollow": [2, 3],
+            "node": 1,
+            "name": "small cell"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 2,
+            "name": "limited"
+        },
+        {
+            "nodesToFollow": [4],
+            "node": 3,
+            "name": "extensive"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 4,
+            "name": "maintenance"
+        },
+        {
+            "nodesToFollow": [6, 8],
+            "node": 5,
+            "name": "non-small"
+        },
+        {
+            "nodesToFollow": [7],
+            "node": 6,
+            "name": "Resectable"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 7,
+            "name": "Adjuvant Therapy"
+        },
+        {
+            "nodesToFollow": [9, 10, 11],
+            "node": 8,
+            "name": "Unresectable"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 9,
+            "name": "First Line"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 10,
+            "name": "Second Line"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 11,
+            "name": "Third Line"
+        }
+    ],
+    "skinNodes": [
+        {
+            "nodesToFollow": [1, 2, 6],
+            "node": 0,
+            "name": "Skin Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 1,
+            "name": "Melanoma",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [3, 4, 5],
+            "node": 2,
+            "name": "Resectable",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 3,
+            "name": "First Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 3,
+            "name": "Post Nephrectomy"
+        },
+        {
+            "nodesToFollow": [5],
+            "node": 4,
+            "name": "Second Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 5,
+            "name": "Third Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [7, 8, 9, 10],
+            "node": 6,
+            "name": "Unresectable",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 7,
+            "name": "First Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 8,
+            "name": "Second Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 9,
+            "name": "Third Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 10,
+            "name": "Metastatic",
+            "questionOnThisNode": "Question here"
+        }
+    ],
+    "breastNodes": [
+        {
+            "nodesToFollow": [1, 5, 10, 12, 13],
+            "node": 0,
+            "name": "Breast Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [2, 4],
+            "node": 1,
+            "name": "Neoadjuvant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [3],
+            "node": 2,
+            "name": "HER2+",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 3,
+            "name": "Early Breast Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 4,
+            "name": "HER2-",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [6, 7],
+            "node": 5,
+            "name": "Adjuvant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 6,
+            "name": "HER2+",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [8],
+            "node": 7,
+            "name": "HER2-",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [9],
+            "node": 8,
+            "name": "Hormone Receptor Positive",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 9,
+            "name": "Early Breast Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [11],
+            "node": 10,
+            "name": "Metastatic",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 11,
+            "name": "Triple Negatice or HER2+",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 12,
+            "name": "Second Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [14],
+            "node": 13,
+            "name": "Other",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 14,
+            "name": "High Risk for Chemo induced nausea and vomiting",
+            "questionOnThisNode": "Question here"
+        }
+    ],
+    "urinaryNodes": [
+        {
+            "nodesToFollow": [1, 8, 21],
+            "node": 0,
+            "name": "Genito-Urinary Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [2, 6],
+            "node": 1,
+            "name": "Renal Cell Carcinoma",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [3, 4],
+            "node": 2,
+            "name": "Adjuvant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 3,
+            "name": "Post Nephrectomy",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [5],
+            "node": 4,
+            "name": "Localized",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 5,
+            "name": "High Risk of Relapse post partial/radical nephrectomy",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [7],
+            "node": 6,
+            "name": "Line 1-2-3",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 7,
+            "name": "Advanced Renal Cell Carcinoma",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [9, 10],
+            "node": 8,
+            "name": "Prostate",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 9,
+            "name": "Adjuvant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [11, 15],
+            "node": 10,
+            "name": "Metastatic",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [12, 13, 14],
+            "node": 11,
+            "name": "Hormone Sensitive",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 12,
+            "name": "First Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 13,
+            "name": "Second Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 14,
+            "name": "Third Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [16, 18, 19],
+            "node": 15,
+            "name": "Castrate Resistant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [17],
+            "node": 16,
+            "name": "First Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 17,
+            "name": "ChemoTherapy Naive; progressed on NG Hormonal Agent",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [20],
+            "node": 18,
+            "name": "Second Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [20],
+            "node": 19,
+            "name": "Third Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 20,
+            "name": "Associated Homologous Recombination Deficiency",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [22, 24],
+            "node": 21,
+            "name": "Bladder Cancer",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [23],
+            "node": 22,
+            "name": "Cisplatin-eligible, Muscle-invasive",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 23,
+            "name": "Neoadjuvant",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [25, 26],
+            "node": 24,
+            "name": "Locally Advanced or Mets Urothelial",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 25,
+            "name": "First Line",
+            "questionOnThisNode": "Question here"
+        },
+        {
+            "nodesToFollow": [],
+            "node": 26,
+            "name": "Third Line",
+            "questionOnThisNode": "Question here"
+        }
+    ],
+
+
+    "lungTrials": [
+        {
+        "name": "ABBVIE MERU M16-298",
+        "pathToSuccessfulTrial": [0, 1, 3, 4],
+        "Availability": false,
+        }
+    ]
+
+
+
+    
+}
