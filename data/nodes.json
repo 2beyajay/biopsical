@@ -63,26 +63,22 @@
     "skinNodes": [{
             "nodesToFollow": [1, 2, 6],
             "node": 0,
-            "name": "Skin Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Skin Cancer"
         },
         {
             "nodesToFollow": [],
             "node": 1,
-            "name": "Melanoma",
-            "questionOnThisNode": "Question here"
+            "name": "Melanoma"
         },
         {
             "nodesToFollow": [3, 4, 5],
             "node": 2,
-            "name": "Resectable",
-            "questionOnThisNode": "Question here"
+            "name": "Resectable"
         },
         {
             "nodesToFollow": [],
             "node": 3,
-            "name": "First Line",
-            "questionOnThisNode": "Question here"
+            "name": "First Line"
         },
         {
             "nodesToFollow": [],
@@ -92,298 +88,249 @@
         {
             "nodesToFollow": [5],
             "node": 4,
-            "name": "Second Line",
-            "questionOnThisNode": "Question here"
+            "name": "Second Line"
         },
         {
             "nodesToFollow": [],
             "node": 5,
-            "name": "Third Line",
-            "questionOnThisNode": "Question here"
+            "name": "Third Line"
         },
         {
             "nodesToFollow": [7, 8, 9, 10],
             "node": 6,
-            "name": "Unresectable",
-            "questionOnThisNode": "Question here"
+            "name": "Unresectable"
         },
         {
             "nodesToFollow": [],
             "node": 7,
-            "name": "First Line",
-            "questionOnThisNode": "Question here"
+            "name": "First Line"
         },
         {
             "nodesToFollow": [],
             "node": 8,
-            "name": "Second Line",
-            "questionOnThisNode": "Question here"
+            "name": "Second Line"
         },
         {
             "nodesToFollow": [],
             "node": 9,
-            "name": "Third Line",
-            "questionOnThisNode": "Question here"
+            "name": "Third Line"
         },
         {
             "nodesToFollow": [],
             "node": 10,
-            "name": "Metastatic",
-            "questionOnThisNode": "Question here"
+            "name": "Metastatic"
         }
     ],
     "breastNodes": [{
             "nodesToFollow": [1, 5, 10, 12, 13],
             "node": 0,
-            "name": "Breast Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Breast Cancer"
         },
         {
             "nodesToFollow": [2, 4],
             "node": 1,
-            "name": "Neoadjuvant",
-            "questionOnThisNode": "Question here"
+            "name": "Neoadjuvant"
         },
         {
             "nodesToFollow": [3],
             "node": 2,
-            "name": "HER2+",
-            "questionOnThisNode": "Question here"
+            "name": "HER2+"
         },
         {
             "nodesToFollow": [],
             "node": 3,
-            "name": "Early Breast Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Early Breast Cancer"
         },
         {
             "nodesToFollow": [],
             "node": 4,
-            "name": "HER2-",
-            "questionOnThisNode": "Question here"
+            "name": "HER2-"
         },
         {
             "nodesToFollow": [6, 7],
             "node": 5,
-            "name": "Adjuvant",
-            "questionOnThisNode": "Question here"
+            "name": "Adjuvant"
         },
         {
             "nodesToFollow": [],
             "node": 6,
-            "name": "HER2+",
-            "questionOnThisNode": "Question here"
+            "name": "HER2+"
         },
         {
             "nodesToFollow": [8],
             "node": 7,
-            "name": "HER2-",
-            "questionOnThisNode": "Question here"
+            "name": "HER2-"
         },
         {
             "nodesToFollow": [9],
             "node": 8,
-            "name": "Hormone Receptor Positive",
-            "questionOnThisNode": "Question here"
+            "name": "Hormone Receptor Positive"
         },
         {
             "nodesToFollow": [],
             "node": 9,
-            "name": "Early Breast Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Early Breast Cancer"
         },
         {
             "nodesToFollow": [11],
             "node": 10,
-            "name": "Metastatic",
-            "questionOnThisNode": "Question here"
+            "name": "Metastatic"
         },
         {
             "nodesToFollow": [],
             "node": 11,
-            "name": "Triple Negatice or HER2+",
-            "questionOnThisNode": "Question here"
+            "name": "Triple Negatice or HER2+"
         },
         {
             "nodesToFollow": [],
             "node": 12,
-            "name": "Second Line",
-            "questionOnThisNode": "Question here"
+            "name": "Second Line"
         },
         {
             "nodesToFollow": [14],
             "node": 13,
-            "name": "Other",
-            "questionOnThisNode": "Question here"
+            "name": "Other"
         },
         {
             "nodesToFollow": [],
             "node": 14,
-            "name": "High Risk for Chemo induced nausea and vomiting",
-            "questionOnThisNode": "Question here"
+            "name": "High Risk for Chemo induced nausea and vomiting"
         }
     ],
     "urinaryNodes": [{
             "nodesToFollow": [1, 8, 21],
             "node": 0,
-            "name": "Genito-Urinary Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Genito-Urinary Cancer"
         },
         {
             "nodesToFollow": [2, 6],
             "node": 1,
-            "name": "Renal Cell Carcinoma",
-            "questionOnThisNode": "Question here"
+            "name": "Renal Cell Carcinoma"
         },
         {
             "nodesToFollow": [3, 4],
             "node": 2,
-            "name": "Adjuvant",
-            "questionOnThisNode": "Question here"
+            "name": "Adjuvant"
         },
         {
             "nodesToFollow": [],
             "node": 3,
-            "name": "Post Nephrectomy",
-            "questionOnThisNode": "Question here"
+            "name": "Post Nephrectomy"
         },
         {
             "nodesToFollow": [5],
             "node": 4,
-            "name": "Localized",
-            "questionOnThisNode": "Question here"
+            "name": "Localized"
         },
         {
             "nodesToFollow": [],
             "node": 5,
-            "name": "High Risk of Relapse post partial/radical nephrectomy",
-            "questionOnThisNode": "Question here"
+            "name": "High Risk of Relapse post partial/radical nephrectomy"
         },
         {
             "nodesToFollow": [7],
             "node": 6,
-            "name": "Line 1-2-3",
-            "questionOnThisNode": "Question here"
+            "name": "Line 1-2-3"
         },
         {
             "nodesToFollow": [],
             "node": 7,
-            "name": "Advanced Renal Cell Carcinoma",
-            "questionOnThisNode": "Question here"
+            "name": "Advanced Renal Cell Carcinoma"
         },
         {
             "nodesToFollow": [9, 10],
             "node": 8,
-            "name": "Prostate",
-            "questionOnThisNode": "Question here"
+            "name": "Prostate"
         },
         {
             "nodesToFollow": [],
             "node": 9,
-            "name": "Adjuvant",
-            "questionOnThisNode": "Question here"
+            "name": "Adjuvant"
         },
         {
             "nodesToFollow": [11, 15],
             "node": 10,
-            "name": "Metastatic",
-            "questionOnThisNode": "Question here"
+            "name": "Metastatic"
         },
         {
             "nodesToFollow": [12, 13, 14],
             "node": 11,
-            "name": "Hormone Sensitive",
-            "questionOnThisNode": "Question here"
+            "name": "Hormone Sensitive"
         },
         {
             "nodesToFollow": [],
             "node": 12,
-            "name": "First Line",
-            "questionOnThisNode": "Question here"
+            "name": "First Line"
         },
         {
             "nodesToFollow": [],
             "node": 13,
-            "name": "Second Line",
-            "questionOnThisNode": "Question here"
+            "name": "Second Line"
         },
         {
             "nodesToFollow": [],
             "node": 14,
-            "name": "Third Line",
-            "questionOnThisNode": "Question here"
+            "name": "Third Line"
         },
         {
             "nodesToFollow": [16, 18, 19],
             "node": 15,
-            "name": "Castrate Resistant",
-            "questionOnThisNode": "Question here"
+            "name": "Castrate Resistant"
         },
         {
             "nodesToFollow": [17],
             "node": 16,
-            "name": "First Line",
-            "questionOnThisNode": "Question here"
+            "name": "First Line"
         },
         {
             "nodesToFollow": [],
             "node": 17,
-            "name": "ChemoTherapy Naive; progressed on NG Hormonal Agent",
-            "questionOnThisNode": "Question here"
+            "name": "ChemoTherapy Naive; progressed on NG Hormonal Agent"
         },
         {
             "nodesToFollow": [20],
             "node": 18,
-            "name": "Second Line",
-            "questionOnThisNode": "Question here"
+            "name": "Second Line"
         },
         {
             "nodesToFollow": [20],
             "node": 19,
-            "name": "Third Line",
-            "questionOnThisNode": "Question here"
+            "name": "Third Line"
         },
         {
             "nodesToFollow": [],
             "node": 20,
-            "name": "Associated Homologous Recombination Deficiency",
-            "questionOnThisNode": "Question here"
+            "name": "Associated Homologous Recombination Deficiency"
         },
         {
             "nodesToFollow": [22, 24],
             "node": 21,
-            "name": "Bladder Cancer",
-            "questionOnThisNode": "Question here"
+            "name": "Bladder Cancer"
         },
         {
             "nodesToFollow": [23],
             "node": 22,
-            "name": "Cisplatin-eligible, Muscle-invasive",
-            "questionOnThisNode": "Question here"
+            "name": "Cisplatin-eligible, Muscle-invasive"
         },
         {
             "nodesToFollow": [],
             "node": 23,
-            "name": "Neoadjuvant",
-            "questionOnThisNode": "Question here"
+            "name": "Neoadjuvant"
         },
         {
             "nodesToFollow": [25, 26],
             "node": 24,
-            "name": "Locally Advanced or Mets Urothelial",
-            "questionOnThisNode": "Question here"
+            "name": "Locally Advanced or Mets Urothelial"
         },
         {
             "nodesToFollow": [],
             "node": 25,
-            "name": "First Line",
-            "questionOnThisNode": "Question here"
+            "name": "First Line"
         },
         {
             "nodesToFollow": [],
             "node": 26,
-            "name": "Third Line",
-            "questionOnThisNode": "Question here"
+            "name": "Third Line"
         }
     ],
     "lungTrials": [{

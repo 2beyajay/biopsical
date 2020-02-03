@@ -188,6 +188,7 @@ class Trials {
                 document.getElementById("title").innerText = "Results:"
                 document.getElementById("buttons").append(output);
                 break;
+            
                 case 2:
                 //for loop to check the entire trial array
                 for(let i = 0; i < this.breastTrials.length; i++){
@@ -212,6 +213,7 @@ class Trials {
                 document.getElementById("title").innerText = "Results:"
                 document.getElementById("buttons").append(output);
                 break;
+            
                 case 3:
                 //for loop to check the entire trial array
                 for(let i = 0; i < this.urinaryTrials.length; i++){
