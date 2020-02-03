@@ -1,5 +1,6 @@
 {
-    "lungNodes": [{
+    "lungNodes": [
+        {
             "nodesToFollow": [1, 5],
             "node": 0,
             "name": "Lung Cancer"
@@ -60,7 +61,8 @@
             "name": "Third Line"
         }
     ],
-    "skinNodes": [{
+    "skinNodes": [
+        {
             "nodesToFollow": [1, 2, 6],
             "node": 0,
             "name": "Skin Cancer"
@@ -79,11 +81,6 @@
             "nodesToFollow": [],
             "node": 3,
             "name": "First Line"
-        },
-        {
-            "nodesToFollow": [],
-            "node": 3,
-            "name": "Post Nephrectomy"
         },
         {
             "nodesToFollow": [5],
@@ -121,7 +118,8 @@
             "name": "Metastatic"
         }
     ],
-    "breastNodes": [{
+    "breastNodes": [
+        {
             "nodesToFollow": [1, 5, 10, 12, 13],
             "node": 0,
             "name": "Breast Cancer"
@@ -197,7 +195,8 @@
             "name": "High Risk for Chemo induced nausea and vomiting"
         }
     ],
-    "urinaryNodes": [{
+    "urinaryNodes": [
+        {
             "nodesToFollow": [1, 8, 21],
             "node": 0,
             "name": "Genito-Urinary Cancer"
@@ -333,112 +332,97 @@
             "name": "Third Line"
         }
     ],
-    "lungTrials": [{
+    "lungTrials": [
+        {
             "name": "ABBVIE MERU M16-298",
             "pathToSuccessfulTrial": [0, 1, 3, 4],
             "Availability": false
         },
         {
             "name": "(CCTG) BR.31",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0, 5, 6, 7],
             "Availability": true
         },
         {
             "name": "(ROCHE) BO29554/BFAST",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0, 5, 8, 9],
             "Availability": true
         },
         {
             "name": "BMS CA209-907",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0, 5, 8, 10],
             "Availability": false
         }
     ],
     "breastTrials": [
         {
-        "name": "(ROCHE) WO40324/ Fedrica",
-        "pathToSuccessfulTrial": [],
-        "Availability": false
+            "name": "(ROCHE) WO40324/ Fedrica",
+            "pathToSuccessfulTrial": [0,1,2,3],
+            "Availability": false   
         },
         {
-        "name": "(NOVARTIS) CLEE011O12301C (NATALEE/TRIO033)",
-        "pathToSuccessfulTrial": [],
-        "Availability": true
+            "name": "(NOVARTIS) CLEE011O12301C (NATALEE/TRIO033)",
+            "pathToSuccessfulTrial": [0,5,7,8,9],
+            "Availability": true
         },
         {
-        "name": "(OHRI) The ILIAD Study",
-        "pathToSuccessfulTrial": [],
-        "Availability": false
+            "name": "(OHRI) The ILIAD Study",
+            "pathToSuccessfulTrial": [0,13,14],
+            "Availability": false
         }
     ],
     "skinTrials": [
         {
-            "name": "(CCTG) ME.13/STOP-GAP",
-            "pathToSuccessfulTrial": [],
-            "Availability": true
+        "name": "(CCTG) ME.13/STOP-GAP",
+        "pathToSuccessfulTrial": [0,6,10],
+        "Availability": true
         }
     ],
     "urinaryTrials": [
         {
             "name": "(MERCK) MK-3475-564/KEYNOTE-564",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,1,2,3],
             "Availability": false
         },
         {
             "name": "(BMS) CA209-914",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,1,2,4,5],
             "Availability": true
         },
         {
             "name": "(BMS) CA018005/FRACTION-RCC",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,1,6,7],
             "Availability": true
         },
         {
             "name": "(Merck) MK3475-641/KEYNOTE 641",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,8,10,15,16,17],
             "Availability": true
         },
         {
             "name": "(Merck) MK3475-921/KEYNOTE 921",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,8,10,15,16],
             "Availability": true
         },
         {
             "name": "(Clovis) TRITON 3/CO-338-063",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,8,10,15,18,20],
+            "Availability": true
+        },
+        {
+            "name": "(Clovis) TRITON 3/CO-338-063",
+            "pathToSuccessfulTrial": [0,8,10,15,19,20],
             "Availability": true
         },
         {
             "name": "(Merck) MK-7902-011",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,21,24,25],
             "Availability": true
         },
         {
             "name": "(ASTELLAS) 7465-CL-0301",
-            "pathToSuccessfulTrial": [],
+            "pathToSuccessfulTrial": [0,21,24,26],
             "Availability": true
-        }
-    ],
-    "breastTrials": [
-        {
-        "name": "namehere1",
-        "pathToSuccessfulTrial": [0, 1, 2, 3],
-        "Availability": true
-        }
-    ],
-    "skinTrials": [
-        {
-        "name": "namehere2",
-        "pathToSuccessfulTrial": [],
-        "Availability": true
-        }
-    ],
-    "urinaryTrials": [
-        {
-        "name": "namehere3",
-        "pathToSuccessfulTrial": [],
-        "Availability": true
         }
     ]
 }
