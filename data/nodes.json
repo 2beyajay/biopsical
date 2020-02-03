@@ -398,6 +398,27 @@
         "pathToSuccessfulTrial": [0, 1, 3, 4],
         "Availability": false
         }
+    ],
+    "breastTrials": [
+        {
+        "name": "namehere1",
+        "pathToSuccessfulTrial": [0, 1, 2, 3],
+        "Availability": true
+        }
+    ],
+    "skinTrials": [
+        {
+        "name": "namehere2",
+        "pathToSuccessfulTrial": [],
+        "Availability": true
+        }
+    ],
+    "urinaryTrials": [
+        {
+        "name": "namehere3",
+        "pathToSuccessfulTrial": [],
+        "Availability": true
+        }
     ]
 
 

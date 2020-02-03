@@ -164,6 +164,78 @@ class Trials {
                 document.getElementById("title").innerText = "Results:"
                 document.getElementById("buttons").append(output);
                 break;
+                case 1:
+                //for loop to check the entire trial array
+                for(let i = 0; i < this.skinTrials.length; i++){
+                    //checks for equal length of patient choices and paths that lead to a trial
+                    if(pathTaken.length == this.skinTrials[i].pathToSuccessfulTrial.length){
+                        //loop that matches individual choice points
+                        for(let x = 0; x < pathTaken.length; x++){
+                            //checks if the individual points match and the trial is open
+                            if(pathTaken[x] == this.skinTrials[i].pathToSuccessfulTrial[x]  && this.skinTrials[i].Availability == true){
+                                output = "This patient is eligible for " + this.lungTrials[i].name + ".";
+                                //checks if the individual points match and the trial is closed
+                            }else if(pathTaken[x] == this.skinTrials[i].pathToSuccessfulTrial[x]  && this.skinTrials[i].Availability == false){
+                                output = "The trial " + this.skinTrials[i].name + " is not open to new patients at this time.";
+                            }
+                        }
+                        break;
+                    }else{
+                        output = "This patient is not eligible for a trial"
+                    }
+                }
+                //outputs the result to the screen.
+                document.getElementById("title").innerText = "Results:"
+                document.getElementById("buttons").append(output);
+                break;
+                case 2:
+                //for loop to check the entire trial array
+                for(let i = 0; i < this.breastTrials.length; i++){
+                    //checks for equal length of patient choices and paths that lead to a trial
+                    if(pathTaken.length == this.breastTrials[i].pathToSuccessfulTrial.length){
+                        //loop that matches individual choice points
+                        for(let x = 0; x < pathTaken.length; x++){
+                            //checks if the individual points match and the trial is open
+                            if(pathTaken[x] == this.breastTrials[i].pathToSuccessfulTrial[x]  && this.breastTrials[i].Availability == true){
+                                output = "This patient is eligible for " + this.breastTrials[i].name + ".";
+                                //checks if the individual points match and the trial is closed
+                            }else if(pathTaken[x] == this.breastTrials[i].pathToSuccessfulTrial[x]  && this.breastTrials[i].Availability == false){
+                                output = "The trial " + this.breastTrials[i].name + " is not open to new patients at this time.";
+                            }
+                        }
+                        break;
+                    }else{
+                        output = "This patient is not eligible for a trial"
+                    }
+                }
+                //outputs the result to the screen.
+                document.getElementById("title").innerText = "Results:"
+                document.getElementById("buttons").append(output);
+                break;
+                case 3:
+                //for loop to check the entire trial array
+                for(let i = 0; i < this.urinaryTrials.length; i++){
+                    //checks for equal length of patient choices and paths that lead to a trial
+                    if(pathTaken.length == this.urinaryTrials[i].pathToSuccessfulTrial.length){
+                        //loop that matches individual choice points
+                        for(let x = 0; x < pathTaken.length; x++){
+                            //checks if the individual points match and the trial is open
+                            if(pathTaken[x] == this.urinaryTrials[i].pathToSuccessfulTrial[x]  && this.urinaryTrials[i].Availability == true){
+                                output = "This patient is eligible for " + this.urinaryTrials[i].name + ".";
+                                //checks if the individual points match and the trial is closed
+                            }else if(pathTaken[x] == this.urinaryTrials[i].pathToSuccessfulTrial[x]  && this.urinaryTrials[i].Availability == false){
+                                output = "The trial " + this.urinaryTrials[i].name + " is not open to new patients at this time.";
+                            }
+                        }
+                        break;
+                    }else{
+                        output = "This patient is not eligible for a trial"
+                    }
+                }
+                //outputs the result to the screen.
+                document.getElementById("title").innerText = "Results:"
+                document.getElementById("buttons").append(output);
+                break;
         }
 
     }
@@ -183,15 +255,18 @@ fetchNodes(nodeClicked, cancertype) {
                     break;
                 case 1:
                     this.skinNodes = data.skinNodes;
+                    this.skinTrials = data.skinTrials
                     // running the funciton createNodes with the value of the clicked node's data-number
                     this.createNodes(nodeClicked, cancertype);
                     break;
                 case 2:
                     this.breastNodes = data.breastNodes;
+                    this.breastTrials = data.breastTrials
                     this.createNodes(nodeClicked, cancertype);
                     break;
                 case 3:
                     this.urinaryNodes = data.urinaryNodes;
+                    this.urinaryTrials = data.urinaryTrials
                     this.createNodes(nodeClicked, cancertype);
                     break;
             }
