@@ -335,22 +335,22 @@
     "lungTrials": [
         {
             "name": "ABBVIE MERU M16-298",
-            "pathToSuccessfulTrial": [0, 1, 3, 4],
+            "pathToSuccessfulTrial": [0,1,3,4],
             "Availability": false
         },
         {
             "name": "(CCTG) BR.31",
-            "pathToSuccessfulTrial": [0, 5, 6, 7],
+            "pathToSuccessfulTrial": [0,5,6,7],
             "Availability": true
         },
         {
             "name": "(ROCHE) BO29554/BFAST",
-            "pathToSuccessfulTrial": [0, 5, 8, 9],
+            "pathToSuccessfulTrial": [0,5,8,9],
             "Availability": true
         },
         {
             "name": "BMS CA209-907",
-            "pathToSuccessfulTrial": [0, 5, 8, 10],
+            "pathToSuccessfulTrial": [0,5,8,10],
             "Availability": false
         }
     ],

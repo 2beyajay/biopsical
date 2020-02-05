@@ -84,7 +84,6 @@ class Trials {
 
             })
         };
-        console.log(nodesToFollow);
     }
 
 
@@ -139,26 +138,27 @@ class Trials {
     matchNodes() {
         //output is the variable that will be outputted to the screen for the user to read
         let output;
+
+        pathTaken = pathTaken.join("")
         console.log(pathTaken)
+        let joinedSuccessfulPath;
         //switch to keep track of what type of cancer
         switch (cancertype) {
             case 0:
-
-                // console.log(this.lungTrials[0].pathToSuccessfulTrial);
-
-
                 for (let i = 0; i < this.lungTrials.length; i++) {
-
-                    if (pathTaken.length == this.lungTrials[i].pathToSuccessfulTrial.length) {
-                        
-                        for (let x = 0; x < this.lungTrials[i].pathToSuccessfulTrial.length; x++) {
-                            if (pathTaken[x] == this.lungTrials[i].pathToSuccessfulTrial[x]) {
-                                output = "The patient is eligible for trial " + this.lungTrials[i].name;
-                            }
+                    joinedSuccessfulPath = this.lungTrials[i].pathToSuccessfulTrial.join("");
+                    if (pathTaken == joinedSuccessfulPath) {
+                        if (this.lungTrials[i].Availability) {
+                            output = `The patient is eligible for ${this.lungTrials[i].name}`
+                            break;
+                        } else {
+                            output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
+                            break;
                         }
+                    } else {
+                        output = `The patient is not eligible for a trial at this time.`;
                     }
                 }
-
 
                 //outputs the result to the screen.
                 document.getElementById("title").innerText = "Results:"
@@ -168,22 +168,17 @@ class Trials {
             case 1:
                 //for loop to check the entire trial array
                 for (let i = 0; i < this.skinTrials.length; i++) {
-
-                    if (pathTaken.length == this.skinTrials[i].pathToSuccessfulTrial.length) {
-                        
-                        for (let x = 0; x < this.skinTrials[i].pathToSuccessfulTrial.length; x++) {
-                            
-                            if (pathTaken[x] == this.skinTrials[i].pathToSuccessfulTrial[x]) {
-                                if (this.skinTrials[i].Availability == true) {
-                                    output = "The patient is eligible for trial " + this.skinTrials[i].name;
-                                } else {
-                                    output = "THe trial " + this.skinTrials[i].name + " is not open to new patients."
-                                }
-                            }
-                            else {
-                                output = "The patient is not eligible for a trial at this time."
-                            }
+                    joinedSuccessfulPath = this.skinTrials[i].pathToSuccessfulTrial.join("");
+                    if (pathTaken == joinedSuccessfulPath) {
+                        if (this.skinTrials[i].Availability) {
+                            output = `The patient is eligible for ${this.skinTrials[i].name}`
+                            break;
+                        } else {
+                            output = `The trial ${this.skinTrials[i].name} is not open to new patients.`
+                            break;
                         }
+                    } else {
+                        output = `The patient is not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
@@ -194,21 +189,17 @@ class Trials {
             case 2:
                 //for loop to check the entire trial array
                 for (let i = 0; i < this.breastTrials.length; i++) {
-
-                    if (pathTaken.length == this.breastTrials[i].pathToSuccessfulTrial.length) {
-                        
-                        for (let x = 0; x < this.breastTrials[i].pathToSuccessfulTrial.length; x++) {
-                            if (pathTaken[x] == this.breastTrials[i].pathToSuccessfulTrial[x]) {
-                                if (this.breastTrials[i].Availability == true) {
-                                    output = "The patient is eligible for trial " + this.breastTrials[i].name;
-                                } else {
-                                    output = "THe trial " + this.breastTrials[i].name + " is not open to new patients."
-                                }
-                            }
-                            else {
-                                output = "The patient is not eligible for a trial at this time."
-                            }
+                    joinedSuccessfulPath = this.breastTrials[i].pathToSuccessfulTrial.join("");
+                    if (pathTaken == joinedSuccessfulPath) {
+                        if (this.breastTrials[i].Availability) {
+                            output = `The patient is eligible for ${this.breastTrials[i].name}`
+                            break;
+                        } else {
+                            output = `The trial ${this.breastTrials[i].name} is not open to new patients.`
+                            break;
                         }
+                    } else {
+                        output = `The patient is not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
@@ -219,17 +210,17 @@ class Trials {
             case 3:
                 //for loop to check the entire trial array
                 for (let i = 0; i < this.urinaryTrials.length; i++) {
-
-                    if (pathTaken.length == this.urinaryTrials[i].pathToSuccessfulTrial.length) {
-                        
-                        for (let x = 0; x < this.urinaryTrials[i].pathToSuccessfulTrial.length; x++) {
-                            if (pathTaken[x] == this.urinaryTrials[i].pathToSuccessfulTrial[x]) {
-                                output = "The patient is eligible for trial " + this.urinaryTrials[i].name;
-                            }
-                            else {
-                                output = "The patient is not eligible for a trial at this time."
-                            }
+                    joinedSuccessfulPath = this.urinaryTrials[i].pathToSuccessfulTrial.join("");
+                    if (pathTaken == joinedSuccessfulPath) {
+                        if (this.urinaryTrials[i].Availability) {
+                            output = `The patient is eligible for ${this.urinaryTrials[i].name}`
+                            break;
+                        } else {
+                            output = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
+                            break;
                         }
+                    } else {
+                        output = `The patient is not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
@@ -277,8 +268,7 @@ class Trials {
 }
 
 
-// let tri = new Trials;
-
+// getting ready all the initial elements' references
 let click = 0;
 let lung = document.getElementById("lung");
 let skin = document.getElementById("skin");
@@ -286,7 +276,7 @@ let breast = document.getElementById("breast");
 let urinary = document.getElementById("urinary");
 let submit = document.getElementById("submit");
 
-
+// putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
     cancertype = 0;
     lung.style.display = "none";
@@ -321,12 +311,7 @@ urinary.addEventListener("click", function () {
 });
 
 
-
-
-
-
-
-// another click listener for the creation of the following nodes to come.
+// another click listener for the creation of following nodes to come.
 submit.addEventListener("click", getNew);
 
 function getNew() {
