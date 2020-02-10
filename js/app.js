@@ -139,6 +139,7 @@ class Trials {
         //output is the variable that will be outputted to the screen for the user to read
         let output;
         submit.classList.add("hide");
+        reset.classList.remove("hide");
         pathTaken = pathTaken.join("")
         console.log(pathTaken)
         let joinedSuccessfulPath;
