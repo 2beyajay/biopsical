@@ -150,19 +150,19 @@ class Trials {
                     joinedSuccessfulPath = this.lungTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.lungTrials[i].Availability) {
-                            output = `The patient is eligible for ${this.lungTrials[i].name}`
+                            output = `You are eligible for ${this.lungTrials[i].name}`
                             break;
                         } else {
                             output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
                             break;
                         }
                     } else {
-                        output = `The patient is not eligible for a trial at this time.`;
+                        output = `You are not eligible for a trial at this time.`;
                     }
                 }
 
                 //outputs the result to the screen.
-                document.getElementById("title").innerText = "Results:"
+                document.getElementById("title").innerText = ""
                 document.getElementById("buttons").append(output);
                 break;
 
@@ -172,18 +172,18 @@ class Trials {
                     joinedSuccessfulPath = this.skinTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.skinTrials[i].Availability) {
-                            output = `The patient is eligible for ${this.skinTrials[i].name}`
+                            output = `You are eligible for ${this.skinTrials[i].name}`
                             break;
                         } else {
                             output = `The trial ${this.skinTrials[i].name} is not open to new patients.`
                             break;
                         }
                     } else {
-                        output = `The patient is not eligible for a trial at this time.`;
+                        output = `You are not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
-                document.getElementById("title").innerText = "Results:"
+                document.getElementById("title").innerText = ""
                 document.getElementById("buttons").append(output);
                 break;
 
@@ -193,18 +193,18 @@ class Trials {
                     joinedSuccessfulPath = this.breastTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.breastTrials[i].Availability) {
-                            output = `The patient is eligible for ${this.breastTrials[i].name}`
+                            output = `You are eligible for ${this.breastTrials[i].name}`
                             break;
                         } else {
                             output = `The trial ${this.breastTrials[i].name} is not open to new patients.`
                             break;
                         }
                     } else {
-                        output = `The patient is not eligible for a trial at this time.`;
+                        output = `You are not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
-                document.getElementById("title").innerText = "Results:"
+                document.getElementById("title").innerText = ""
                 document.getElementById("buttons").append(output);
                 break;
 
@@ -214,18 +214,18 @@ class Trials {
                     joinedSuccessfulPath = this.urinaryTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
-                            output = `The patient is eligible for ${this.urinaryTrials[i].name}`
+                            output = `You are eligible for ${this.urinaryTrials[i].name}`
                             break;
                         } else {
                             output = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
                             break;
                         }
                     } else {
-                        output = `The patient is not eligible for a trial at this time.`;
+                        output = `You are not eligible for a trial at this time.`;
                     }
                 }
                 //outputs the result to the screen.
-                document.getElementById("title").innerText = "Results:"
+                document.getElementById("title").innerText = ""
                 document.getElementById("buttons").append(output);
                 break;
         }
