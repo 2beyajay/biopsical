@@ -276,41 +276,30 @@ let skin = document.getElementById("skin");
 let breast = document.getElementById("breast");
 let urinary = document.getElementById("urinary");
 let submit = document.getElementById("submit");
+let initial = document.getElementById("initial")
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
     cancertype = 0;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     theStart(lung.dataset.number);
 });
 skin.addEventListener("click", function () {
     cancertype = 1;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     theStart(skin.dataset.number);
 });
 breast.addEventListener("click", function () {
     cancertype = 2;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     theStart(breast.dataset.number);
 });
 urinary.addEventListener("click", function () {
     cancertype = 3;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     theStart(urinary.dataset.number);
 });
