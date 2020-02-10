@@ -138,7 +138,7 @@ class Trials {
     matchNodes() {
         //output is the variable that will be outputted to the screen for the user to read
         let output;
-
+        submit.classList.add("hide");
         pathTaken = pathTaken.join("")
         console.log(pathTaken)
         let joinedSuccessfulPath;
@@ -283,6 +283,7 @@ lung.addEventListener("click", function () {
     skin.style.display = "none";
     breast.style.display = "none";
     urinary.style.display = "none";
+    submit.classList.remove("hide");
     theStart(lung.dataset.number);
 });
 skin.addEventListener("click", function () {
@@ -291,6 +292,7 @@ skin.addEventListener("click", function () {
     skin.style.display = "none";
     breast.style.display = "none";
     urinary.style.display = "none";
+    submit.classList.remove("hide");
     theStart(skin.dataset.number);
 });
 breast.addEventListener("click", function () {
@@ -299,6 +301,7 @@ breast.addEventListener("click", function () {
     skin.style.display = "none";
     breast.style.display = "none";
     urinary.style.display = "none";
+    submit.classList.remove("hide");
     theStart(breast.dataset.number);
 });
 urinary.addEventListener("click", function () {
@@ -307,6 +310,7 @@ urinary.addEventListener("click", function () {
     skin.style.display = "none";
     breast.style.display = "none";
     urinary.style.display = "none";
+    submit.classList.remove("hide");
     theStart(urinary.dataset.number);
 });
 
