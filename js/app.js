@@ -323,3 +323,9 @@ function theStart(nodeClicked) {
     // passing the clicked node's data-number value to the class
     let tri = new Trials(nodeClicked);
 }
+
+document.getElementById("reset").addEventListener("click", resetApp);
+
+function resetApp(){
+    document.location.reload();
+}
