@@ -324,8 +324,10 @@ function theStart(nodeClicked) {
     let tri = new Trials(nodeClicked);
 }
 
-document.getElementById("reset").addEventListener("click", resetApp);
+let reset = document.getElementById("reset");
+reset.addEventListener("click", resetApp);
 
 function resetApp(){
+    console.log("test")
     document.location.reload();
 }

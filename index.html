@@ -5,75 +5,61 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lakeridge Health</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="https://fonts.googleapis.com/css?family=Lemonada|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body style="background-image: url(images/home.png);">
+<!-- header start -->
+<header id="decorLogo">
+    <a href="index.html">
+        <img id="logo" src="img/logo.png" alt="company logo" href="index.html">
+    </a>
+</header>
+<!-- end header -->
 
-    <header>
+<!-- body start -->
 
-        <div class="top-bar">
-            <div class="top-bar-left">
-                <ul class="menu">
-                    <div class="medium-4 small-8 large-2 columns">
-                        <img src="img/logo.png" alt="company logo">
-                    </div>
-                    <div class="bar-right">
-
-                    </div>
-            </div>
-        </div>
-
-    </header>
-
+<body id="decorBody">
+    <!-- main section with buttons -->
     <div class="row">
-        <div class="large-12 columns">
-            <b>
+        
+            <h1 id="title">Please select one of the following</h1>
+            <h2 id="finalResult"></h2>
 
-                <h3 id="title" style="text-align: center;"><b>Please select one of the following options</b>
-                    <h3>
-                        <!-- Radio Buttons -->
+            <!-- container for javascript buttons(options) -->
+            <div class="large-12 medium-8 small-4 columns">
+            </div>
 
+            <!-- container for javascript buttons(options) -->
+            <div id="buttons" class="large-8 medium-4 small-10 columns container">
+            </div>
 
-                        <div class="large-12 medium-4 small-12 columns">
+            <!-- first page static buttons -->
+            <div class="large-12 medium-4 small-12 columns grid-x grid-padding-x">
+                <input class="large-6" type="button" value="Breast" id="breast" data-number="0"><br>
+                <input class="large-6" type="button" value="Genetio - Urinary" id="urinary" data-number="0"><br>
+                <input class="large-6" type="button" value="Lung" id="lung" data-number="0"><br>
+                <input class="large-6" type="button" value="Cutaneous Onc" id="skin" data-number="0"><br>
+            </div>
+        
 
-
-                        </div>
-                        <div id="buttons" class="large-12 medium-8 small-10 columns">
-                        </div>
-
-                        <input type="button" style="margin-left: 33%;padding: 2%;" value="Breast" id="breast"
-                            data-number="0">
-                        <input type="button" style="margin-left: 4%;padding: 2%;" value="Genetio - Urinary" id="urinary"
-                            data-number="0">
-                        <input type="button" style="margin-left: 33%;padding: 2%;" value="Lung" id="lung"
-                            data-number="0">
-                        <input type="button" style="margin-left: 4%;padding: 2%;" value="Cutaneous Onc" id="skin"
-                            data-number="0">
+        <br><br>
+        <!-- submit button section -->
+        <div class="large-12 medium-6 small-11 columns" id="btnSubmit">
+            <input type="submit" class="button hide" value="Submit" id="submit">
+            <input type="submit" class="button" value="Restart" id="reset">
         </div>
-        </b>
     </div>
-
-    </div><br><br>
-    <div class="polls-submit">
-        <input type="submit" class="button" style="margin-left: 41%;" value="Submit" id="submit">
-        <input type="submit" class="button" style="margin-left: 41%;" value="Restart" id="reset">
-    </div>
-    </div>
-
-    <!-- Checkboxes -->
-    </article>
-    </div>
-
-
-
-    </div>
-    </footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
 
 </body>
+<!-- body end -->
+
+<!--external javascripts  -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 
 </html>
