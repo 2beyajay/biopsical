@@ -61,21 +61,21 @@ class Trials {
 
 
         // the foreach loop to create multiple nodes according to the nodesToFollow;
-        document.getElementById("buttons").innerHTML = "";
+        document.getElementById("nodesHere").innerHTML = "";
         if (nodesToFollow.length == 0) {
             this.matchNodes();
         } else {
             nodesToFollow.forEach(element => {
                 let createdNode = document.createElement("input");
                 createdNode.type = "button";
-                createdNode.classList.add("large-12");
+                createdNode.classList.add("large-6");
                 // getting the value from a function created just to get name of the nodes while passing it the node we want the name of.
                 createdNode.value = this.gettingNodeName(element);
 
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
 
-                document.getElementById("buttons").append(createdNode);
+                document.getElementById("nodesHere").append(createdNode);
 
                 createdNode.addEventListener("click", function () {
                     // giving flag the value of the data-number to be used by the submit button
@@ -163,7 +163,7 @@ class Trials {
 
                 //outputs the result to the screen.
                 document.getElementById("title").innerText = ""
-                document.getElementById("buttons").append(output);
+                document.getElementById("nodesHere").append(output);
                 break;
 
             case 1:
@@ -184,7 +184,7 @@ class Trials {
                 }
                 //outputs the result to the screen.
                 document.getElementById("title").innerText = ""
-                document.getElementById("buttons").append(output);
+                document.getElementById("nodesHere").append(output);
                 break;
 
             case 2:
@@ -205,7 +205,7 @@ class Trials {
                 }
                 //outputs the result to the screen.
                 document.getElementById("title").innerText = ""
-                document.getElementById("buttons").append(output);
+                document.getElementById("nodesHere").append(output);
                 break;
 
             case 3:
@@ -226,7 +226,7 @@ class Trials {
                 }
                 //outputs the result to the screen.
                 document.getElementById("title").innerText = ""
-                document.getElementById("buttons").append(output);
+                document.getElementById("nodesHere").append(output);
                 break;
         }
 
@@ -276,6 +276,7 @@ let skin = document.getElementById("skin");
 let breast = document.getElementById("breast");
 let urinary = document.getElementById("urinary");
 let submit = document.getElementById("submit");
+let initialOptions = document.getElementById("initialOptions");
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
@@ -285,6 +286,7 @@ lung.addEventListener("click", function () {
     breast.style.display = "none";
     urinary.style.display = "none";
     submit.classList.remove("hide");
+    lung.classList.add("hide");
     theStart(lung.dataset.number);
 });
 skin.addEventListener("click", function () {
@@ -294,6 +296,7 @@ skin.addEventListener("click", function () {
     breast.style.display = "none";
     urinary.style.display = "none";
     submit.classList.remove("hide");
+    lung.classList.add("hide");
     theStart(skin.dataset.number);
 });
 breast.addEventListener("click", function () {
@@ -303,6 +306,7 @@ breast.addEventListener("click", function () {
     breast.style.display = "none";
     urinary.style.display = "none";
     submit.classList.remove("hide");
+    lung.classList.add("hide");
     theStart(breast.dataset.number);
 });
 urinary.addEventListener("click", function () {
@@ -312,7 +316,9 @@ urinary.addEventListener("click", function () {
     breast.style.display = "none";
     urinary.style.display = "none";
     submit.classList.remove("hide");
+    lung.classList.add("hide");
     theStart(urinary.dataset.number);
+
 });
 
 

@@ -1,31 +1,29 @@
-/* body styles */
-#decorBody {
-  text-align: center;
-}
-
 /* heading styles */
 #title {
   text-align: "center";
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
   padding: 20px;
+  font-weight: 600;
+  color: #1d1d1d;
+  font-size: 1.75em;
+  margin-top: 50px;
 }
 
 body {
   background-image: url("../img/building.jpg") !important;
   background-repeat: repeat;
   background-size: cover;
-
+  text-align: center;
 }
 
-h5{
+h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #46494e
 }
 
 /* logo styles */
-#decorLogo {
+header {
   text-align: center;
   height: 120px;
   width: auto;
@@ -48,7 +46,7 @@ input[type=button] {
   margin-bottom: 2%;
   padding: auto;
   font-size: 15pt;
-  
+
   border: none;
   font-family: 'Raleway', sans-serif;
 }
@@ -60,10 +58,10 @@ input[type=button] {
   width: 60vw;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 15%;
+
 }
 
-#finalResult{
+#finalResult {
   text-align: center;
   font-size: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -78,7 +76,8 @@ input[type=submit] {
   font-size: 15pt;
   height: 60px;
   text-align: center;
-  margin-bottom: 3%;
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
 
 }
@@ -88,23 +87,29 @@ input[type=submit] {
   padding: auto;
 }
 
-.hide{
-  display: none;
-}
-
-
-.initialSelection{
+#initialOptions {
+  display: flex;
   color: #707070;
+  margin-top: -50px;
 }
 
-.initialSelection input, #buttons input{
+#initialOptions input,
+#nodesHere input {
   background-color: #f8f8f8;
   box-shadow: #494949 0px 0px 5px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
 }
 
-.initialSelection input:hover, #buttons input:hover{
+#initialOptions input:hover,
+#nodesHere input:hover {
   background-color: #707070;
   color: #f8f8f8;
-} 
+}
+
+
+
+
+.hide {
+  display: none;
+}
