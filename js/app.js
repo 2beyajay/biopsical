@@ -276,33 +276,33 @@ let skin = document.getElementById("skin");
 let breast = document.getElementById("breast");
 let urinary = document.getElementById("urinary");
 let submit = document.getElementById("submit");
-let initialOptions = document.getElementById("initialOptions");
+let initial = document.getElementById("initialOptions");
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
     cancertype = 0;
-    initial.classList.add("hide");
+    initial.style.display = "none";
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(lung.dataset.number);
 });
 skin.addEventListener("click", function () {
     cancertype = 1;
-    initial.classList.add("hide");
+    initial.style.display = "none";
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(skin.dataset.number);
 });
 breast.addEventListener("click", function () {
     cancertype = 2;
-    initial.classList.add("hide");
+    initial.style.display = "none";
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(breast.dataset.number);
 });
 urinary.addEventListener("click", function () {
     cancertype = 3;
-    initial.classList.add("hide");
+    initial.style.display = "none";
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(urinary.dataset.number);
