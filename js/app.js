@@ -281,40 +281,28 @@ let initialOptions = document.getElementById("initialOptions");
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
     cancertype = 0;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(lung.dataset.number);
 });
 skin.addEventListener("click", function () {
     cancertype = 1;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(skin.dataset.number);
 });
 breast.addEventListener("click", function () {
     cancertype = 2;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(breast.dataset.number);
 });
 urinary.addEventListener("click", function () {
     cancertype = 3;
-    lung.style.display = "none";
-    skin.style.display = "none";
-    breast.style.display = "none";
-    urinary.style.display = "none";
+    initial.classList.add("hide");
     submit.classList.remove("hide");
     lung.classList.add("hide");
     theStart(urinary.dataset.number);
