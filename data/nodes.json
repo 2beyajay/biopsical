@@ -8,27 +8,27 @@
         {
             "nodesToFollow": [2, 3],
             "node": 1,
-            "name": "small cell"
+            "name": "Small Cell"
         },
         {
             "nodesToFollow": [],
             "node": 2,
-            "name": "limited"
+            "name": "Limited"
         },
         {
             "nodesToFollow": [4],
             "node": 3,
-            "name": "extensive"
+            "name": "Extensive"
         },
         {
             "nodesToFollow": [],
             "node": 4,
-            "name": "maintenance"
+            "name": "Maintenance"
         },
         {
             "nodesToFollow": [6, 8],
             "node": 5,
-            "name": "non-small"
+            "name": "Non-Small"
         },
         {
             "nodesToFollow": [7],
