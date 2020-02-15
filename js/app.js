@@ -32,7 +32,9 @@ class Trials {
         // using the nodeClicked value to fetch the correct node. 
         this.fetchNodes(nodeClicked, cancertype);
         pathTaken.push(nodeClicked);
+        
     }
+
 
     // function to create the following nodes by passing the node that the user just clicked on
     createNodes(nodeClicked, cancertype) {
@@ -58,13 +60,16 @@ class Trials {
         const nodesToFollow = nodeClickedInfo[0].nodesToFollow;
         // variable to hold the nodes' names 
         const nodesClickedName = nodeClickedInfo[0].name;
-
+        
+        
 
         // the foreach loop to create multiple nodes according to the nodesToFollow;
         document.getElementById("nodesHere").innerHTML = "";
         if (nodesToFollow.length == 0) {
             this.matchNodes();
         } else {
+            //creating the breadCrumb trail
+            crumbs.innerText += " " + nodesClickedName + " - ";
             nodesToFollow.forEach(element => {
                 let createdNode = document.createElement("input");
                 createdNode.type = "button";
@@ -86,7 +91,7 @@ class Trials {
         };
     }
 
-
+    
     gettingNodeName(node) {
         let nodeName;
         switch (cancertype) {
@@ -143,6 +148,8 @@ class Trials {
         pathTaken = pathTaken.join("")
         console.log(pathTaken)
         let joinedSuccessfulPath;
+        //none is used to create the final breadCrumb Trail
+        let none = "";
         //switch to keep track of what type of cancer
         switch (cancertype) {
             case 0:
@@ -151,17 +158,22 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.lungTrials[i].Availability) {
                             output = `You are eligible for ${this.lungTrials[i].name}`
+                            crumbs.innerText += " " + this.lungTrials[i].name;
+                            none = "";
                             break;
                         } else {
                             output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
+                            crumbs.innerText +=  " " + this.lungTrials[i].name;
                             break;
                         }
                     } else {
                         output = `You are not eligible for a trial at this time.`;
+                        none = " No Trials."
                     }
                 }
 
                 //outputs the result to the screen.
+                crumbs.innerText += none;
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -173,16 +185,21 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.skinTrials[i].Availability) {
                             output = `You are eligible for ${this.skinTrials[i].name}`
+                            crumbs.innerText += " " + this.skinTrials[i].name;
+                            none = "";
                             break;
                         } else {
                             output = `The trial ${this.skinTrials[i].name} is not open to new patients.`
+                            crumbs.innerText += " " + this.skinTrials[i].name;
                             break;
                         }
                     } else {
                         output = `You are not eligible for a trial at this time.`;
+                        none = " No Trials";
                     }
                 }
                 //outputs the result to the screen.
+                crumbs.innerText += none;
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -194,16 +211,21 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.breastTrials[i].Availability) {
                             output = `You are eligible for ${this.breastTrials[i].name}`
+                            crumbs.innerText += " " + this.breastTrials[i].name;
+                            none = "";
                             break;
                         } else {
                             output = `The trial ${this.breastTrials[i].name} is not open to new patients.`
+                            crumbs.innerText += " " + this.breastTrials[i].name;
                             break;
                         }
                     } else {
                         output = `You are not eligible for a trial at this time.`;
+                        none = " No Trials"
                     }
                 }
                 //outputs the result to the screen.
+                crumbs.innerText += none;
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -215,16 +237,21 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
                             output = `You are eligible for ${this.urinaryTrials[i].name}`
+                            crumbs.innerText += " " + this.urinaryTrials[i].name;
+                            none = "";
                             break;
                         } else {
                             output = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
+                            crumbs.innerText += " " + this.urinaryTrials[i].name;
                             break;
                         }
                     } else {
                         output = `You are not eligible for a trial at this time.`;
+                        none = " No Trials"
                     }
                 }
                 //outputs the result to the screen.
+                crumbs.innerText += none;
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -277,6 +304,7 @@ let breast = document.getElementById("breast");
 let urinary = document.getElementById("urinary");
 let submit = document.getElementById("submit");
 let initial = document.getElementById("initialOptions");
+let crumbs = document.getElementById("breadCrumbs");
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
@@ -315,6 +343,7 @@ submit.addEventListener("click", getNew);
 
 function getNew() {
     theStart(clickedNodeFlag);
+    
 }
 
 function theStart(nodeClicked) {
