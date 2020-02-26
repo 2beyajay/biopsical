@@ -17,22 +17,17 @@ class Trials {
         // array which holds all the trials for lungs, then later we filter the information we need
         this.lungTrials;
         this.breastTrials;
-
-
         // array which holds all the nodes for lungs chart
         this.lungNodes;
         this.skinNodes;
         this.breastNodes;
         this.urinaryNodes;
-
         // running the fetch functions for both json files.
         // getting the trials
-
-
         // using the nodeClicked value to fetch the correct node. 
         this.fetchNodes(nodeClicked, cancertype);
         pathTaken.push(nodeClicked);
-        
+
     }
 
 
@@ -44,15 +39,23 @@ class Trials {
         switch (cancertype) {
             case 0:
                 nodeClickedInfo = this.lungNodes.filter(clickedNode => clickedNode.node == nodeClicked);
+                document.body.style.backgroundImage = "url('background.svg')";
+
                 break;
             case 1:
                 nodeClickedInfo = this.skinNodes.filter(clickedNode => clickedNode.node == nodeClicked);
+                document.body.style.backgroundImage = "url('background.svg')";
+
                 break;
             case 2:
                 nodeClickedInfo = this.breastNodes.filter(clickedNode => clickedNode.node == nodeClicked);
+                document.body.style.backgroundImage = "url('background.svg')";
+
                 break;
             case 3:
                 nodeClickedInfo = this.urinaryNodes.filter(clickedNode => clickedNode.node == nodeClicked);
+                document.body.style.backgroundImage = "url('background.svg')";
+
                 break;
         }
 
@@ -60,8 +63,8 @@ class Trials {
         const nodesToFollow = nodeClickedInfo[0].nodesToFollow;
         // variable to hold the nodes' names 
         const nodesClickedName = nodeClickedInfo[0].name;
-        
-        
+
+
 
         // the foreach loop to create multiple nodes according to the nodesToFollow;
         document.getElementById("nodesHere").innerHTML = "";
@@ -91,7 +94,7 @@ class Trials {
         };
     }
 
-    
+
     gettingNodeName(node) {
         let nodeName;
         switch (cancertype) {
@@ -163,7 +166,7 @@ class Trials {
                             break;
                         } else {
                             output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
-                            crumbs.innerText +=  " " + this.lungTrials[i].name;
+                            crumbs.innerText += " " + this.lungTrials[i].name;
                             break;
                         }
                     } else {
@@ -311,6 +314,7 @@ lung.addEventListener("click", function () {
     cancertype = 0;
     initial.style.display = "none";
     submit.classList.remove("hide");
+    document.getElementById("title").innerText = "Clinical Trial Eligibility :    Lung Cancer";
     lung.classList.add("hide");
     theStart(lung.dataset.number);
 });
@@ -318,6 +322,7 @@ skin.addEventListener("click", function () {
     cancertype = 1;
     initial.style.display = "none";
     submit.classList.remove("hide");
+    document.getElementById("title").innerText = "Clinical Trial Eligibility :  Cutaneous Onc Cancer";
     lung.classList.add("hide");
     theStart(skin.dataset.number);
 });
@@ -325,6 +330,7 @@ breast.addEventListener("click", function () {
     cancertype = 2;
     initial.style.display = "none";
     submit.classList.remove("hide");
+    document.getElementById("title").innerText = "Clinical Trial Eligibility : Breast Cancer";
     lung.classList.add("hide");
     theStart(breast.dataset.number);
 });
@@ -332,6 +338,7 @@ urinary.addEventListener("click", function () {
     cancertype = 3;
     initial.style.display = "none";
     submit.classList.remove("hide");
+    document.getElementById("title").innerText = "Clinical Trial Eligibility : Genetio - Urinary Cancer";
     lung.classList.add("hide");
     theStart(urinary.dataset.number);
 
@@ -343,7 +350,7 @@ submit.addEventListener("click", getNew);
 
 function getNew() {
     theStart(clickedNodeFlag);
-    
+
 }
 
 function theStart(nodeClicked) {
@@ -355,7 +362,9 @@ function theStart(nodeClicked) {
 let reset = document.getElementById("reset");
 reset.addEventListener("click", resetApp);
 
-function resetApp(){
+
+
+function resetApp() {
     console.log("test")
     document.location.reload();
 }

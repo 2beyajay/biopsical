@@ -9,13 +9,15 @@
 	margin-top: 50px;
 }
 
+/* background in body and styling */
 body {
-	background-image: url("../img/building.jpg") !important;
+	background-image: url("../img/building.jpg");
 	background-repeat: repeat;
 	background-size: cover;
 	text-align: center;
 }
 
+/* header style */
 h5 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
@@ -29,6 +31,7 @@ header {
 	width: auto;
 }
 
+/* LOGO styling */
 #logo {
 	height: 150px;
 	width: 250px;
@@ -46,26 +49,21 @@ input[type=button] {
 	margin-bottom: 2%;
 	padding: auto;
 	font-size: 15pt;
-
 	border: none;
 	font-family: 'Raleway', sans-serif;
 }
 
 
-
-
+/* Final result styling */
 #nodesHere {
 	display: flex;
-	width: 100%;	
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-
-}
-
-#finalResult {
 	text-align: center;
+	font-weight: bolder;
 	font-size: 40px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #1d1d1d;
@@ -82,39 +80,49 @@ input[type=submit] {
 	display: block;
 	margin: 0 auto;
 	font-weight: 500;
-
-}
-
-#btnSubmit {
-	text-align: center;
 	padding: auto;
 }
 
-#initialOptions, #nodesHere {
+/* intial options styling */
+#initialOptions,
+#nodesHere {
 	display: flex;
-	color: #707070;
-	margin-top: -50px;
+	color: #000000;
 }
 
-#nodesHere input:focus{
+/* focus styling on nodes */
+#nodesHere input:focus {
 	background-color: #707070;
 	color: #f8f8f8;
 }
 
+/* input type of option and nodes styling */
 #initialOptions input,
 #nodesHere input {
 	background-color: #f8f8f8;
 	box-shadow: #494949 0px 0px 5px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
+	color: #000000;
 }
 
+/* hover to options on surveys */
 #initialOptions input:hover,
 #nodesHere input:hover {
-	background-color: #707070;
+	background-color: #3a2828;
 	color: #f8f8f8;
 }
 
-.hide {
-	display: none;
+/* breadCrumbs showing path - styling  */
+#breadCrumbs {
+	background-color: rgba(194, 194, 194, 0.694);
+	font-size: 15pt;
+	color: darkred;
+}
+
+/* reset button svg currently working on it */
+#btnReset {
+	width: 50px;
+	height: 50px;
+	text-align: center;
 }
