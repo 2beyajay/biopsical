@@ -4,36 +4,36 @@
             "nodesToFollow": [1, 5],
             "node": 0,
             "name": "Lung Cancer",
-            "desc": "a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung. This growth can spread beyond the lung by the process of metastasis into nearby tissue or other parts of the body"
+            "desc": "A malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung. This growth can spread beyond the lung by the process of metastasis into nearby tissue or other parts of the body"
         },
         {
             "nodesToFollow": [2, 3],
             "node": 1,
-            "name": "small cell",
+            "name": "Small Cell",
             "desc": "Small cell lung cancer (SCLC) is a fast-growing type of lung cancer. It spreads much more quickly than non-small cell lung cancer. There are two types of SCLC: Small cell carcinoma (oat cell cancer) and Combined small cell carcinoma"
         },
         {
             "nodesToFollow": [],
             "node": 2,
-            "name": "limited",
+            "name": "Limited",
             "desc": "Limited stage means that the cancer is only in 1 part of the chest and radiation therapy could be a treatment option. About 1 out of 3 people with SCLC have limited stage disease when first diagnosed."
         },
         {
             "nodesToFollow": [4],
             "node": 3,
-            "name": "extensive",
+            "name": "Extensive",
             "desc": "Extensive stage small cell lung cancer is defined as the stage during which the cancer has metastasized (spread) to other parts of the body, such as the lung or brain. The liver, adrenal glands, and bone are also common sites of metastasis."
         },
         {
             "nodesToFollow": [],
             "node": 4,
-            "name": "maintenance",
+            "name": "Maintenance",
             "desc": ""
         },
         {
             "nodesToFollow": [6, 8],
             "node": 5,
-            "name": "non-small",
+            "name": "Non-Small",
             "desc": "Non-small-cell lung carcinoma (NSCLC) is any type of epithelial lung cancer other than small cell lung carcinoma (SCLC). NSCLC accounts for about 85% of all lung cancers."
         },
         {
@@ -341,7 +341,7 @@
             "nodesToFollow": [],
             "node": 17,
             "name": "ChemoTherapy Naive; progressed on NG Hormonal Agent",
-            "desc": " Who have had little or no experience with chemotherapy"
+            "desc": "Who have had little or no experience with chemotherapy"
         },
         {
             "nodesToFollow": [20],

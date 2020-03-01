@@ -9,7 +9,7 @@ let cancertype;
 
 // variable which will hold the data-number value of the clicked node to be later used by the submit button.
 let clickedNodeFlag;
-
+let clickedNodeDesc;
 
 // the trial class for obtaining needed information related to the trials and nodes
 class Trials {
@@ -79,14 +79,19 @@ class Trials {
                 createdNode.classList.add("large-6");
                 // getting the value from a function created just to get name of the nodes while passing it the node we want the name of.
                 createdNode.value = this.gettingNodeName(element);
+                
 
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
+                createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
+                console.log(createdNode.dataset.desc);
+                
 
                 document.getElementById("nodesHere").append(createdNode);
 
                 createdNode.addEventListener("click", function () {
                     // giving flag the value of the data-number to be used by the submit button
+                    clickedNodeDesc = createdNode.dataset.desc;
                     clickedNodeFlag = createdNode.dataset.number;
                 });
 
@@ -133,6 +138,24 @@ class Trials {
         }
 
         return nodeNumber[0].node;
+    }
+    gettingNodeDesc(node){
+        let nodeDesc;
+        switch(cancertype){
+            case 0:
+                nodeDesc = this.lungNodes.filter(clickedNode => clickedNode.node == node);
+                break;
+            case 1:
+                nodeDesc = this.skinNodes.filter(clickedNode => clickedNode.node == node);
+                break;
+            case 2:
+                nodeDesc = this.breastNodes.filter(clickedNode => clickedNode.node == node);
+                break;
+            case 3:
+                nodeDesc = this.urinaryNodes.filter(clickedNode => clickedNode.node == node);
+                break;
+        }
+        return nodeDesc[0].desc;
     }
 
     gettingNodeQuestion(node) {
@@ -349,6 +372,7 @@ urinary.addEventListener("click", function () {
 submit.addEventListener("click", getNew);
 
 function getNew() {
+    
     theStart(clickedNodeFlag);
 
 }
