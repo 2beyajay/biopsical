@@ -116,9 +116,18 @@ input[type=submit] {
 
 /* breadCrumbs showing path - styling  */
 #breadCrumbs {
-	background-color: rgba(194, 194, 194, 0.694);
 	font-size: 15pt;
 	color: darkred;
+	border: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.crumbBorder{
+	margin-left: 25px;
+	border: 10 solid black;
+	background-color: gray;
+	display: inline;
 }
 
 /* reset button svg currently working on it */
