@@ -190,6 +190,7 @@ class Trials {
                         } else {
                             output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
                             crumbs.innerText += " " + this.lungTrials[i].name;
+                            none = "";
                             break;
                         }
                     } else {
@@ -217,6 +218,7 @@ class Trials {
                         } else {
                             output = `The trial ${this.skinTrials[i].name} is not open to new patients.`
                             crumbs.innerText += " " + this.skinTrials[i].name;
+                            none = "";
                             break;
                         }
                     } else {
@@ -243,6 +245,7 @@ class Trials {
                         } else {
                             output = `The trial ${this.breastTrials[i].name} is not open to new patients.`
                             crumbs.innerText += " " + this.breastTrials[i].name;
+                            none = "";
                             break;
                         }
                     } else {
@@ -269,6 +272,7 @@ class Trials {
                         } else {
                             output = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
                             crumbs.innerText += " " + this.urinaryTrials[i].name;
+                            none = "";
                             break;
                         }
                     } else {
