@@ -268,7 +268,7 @@
         {
             "nodesToFollow": [],
             "node": 5,
-            "name": "High Risk of Relapse post partial/radical nephrectomy",
+            "name": "High Risk of Relapse",
             "desc": "High Risk of Relapse post partial/radical nephrectomy."
         },
         {
@@ -340,8 +340,8 @@
         {
             "nodesToFollow": [],
             "node": 17,
-            "name": "ChemoTherapy Naive; progressed on NG Hormonal Agent",
-            "desc": "Who have had little or no experience with chemotherapy"
+            "name": "ChemoTherapy Naive",
+            "desc": " progressed on NG Hormonal Agent: Who have had little or no experience with chemotherapy"
         },
         {
             "nodesToFollow": [20],
