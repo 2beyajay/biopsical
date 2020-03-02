@@ -332,7 +332,7 @@
             "desc": "Castrate-resistant prostate cancer (CRPC) is defined by disease progression despite androgen depletion therapy (ADT) and may present as either a continuous rise in serum prostate-specific antigen (PSA) levels, the progression of pre-existing disease, and/or the appearance of new metastases."
         },
         {
-            "nodesToFollow": [17],
+            "nodesToFollow": [17, 30],
             "node": 16,
             "name": "First Line",
             "desc": "First line therapy is the treatment regimen or regimens that are generally accepted by the medical establishment for initial treatment of a given type and stage of cancer. It is also called primary treatment or therapy."
@@ -358,8 +358,8 @@
         {
             "nodesToFollow": [],
             "node": 20,
-            "name": "Associated Homologous Recombination Deficiency",
-            "desc": "Homologous recombination is a DNA repair pathway of clinical interest due to the sensitivity of homologous recombination-deficient cells to poly-ADP ribose polymerase (PARP) inhibitors."
+            "name": "AHRD",
+            "desc": "Associated Homologous Recombination Deficiency: Homologous recombination is a DNA repair pathway of clinical interest due to the sensitivity of homologous recombination-deficient cells to poly-ADP ribose polymerase (PARP) inhibitors."
         },
         {
             "nodesToFollow": [22, 24],
@@ -396,6 +396,12 @@
             "node": 26,
             "name": "Third Line",
             "desc": "Treatment that is given when both initial treatment (first-line therapy) and subsequent treatment (second-line therapy) don't work, or stop working."
+        },
+        {
+            "nodesToFollow": [],
+            "node": 30,
+            "name": "(Merck) MK3475-921/KEYNOTE 921",
+            "desc": "Is a Urinary Cancer Clinical Trial"
         }
     ],
     "lungTrials": [
@@ -467,7 +473,7 @@
         },
         {
             "name": "(Merck) MK3475-921/KEYNOTE 921",
-            "pathToSuccessfulTrial": [0,8,10,15,16],
+            "pathToSuccessfulTrial": [0,8,10,15,16,30],
             "Availability": true
         },
         {
