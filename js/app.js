@@ -352,7 +352,6 @@ lung.addEventListener("click", function () {
     cancertype = 0;
     initial.style.display = "none";
     submit.classList.remove("hide");
-    document.getElementById("title").innerText = "";
     title.innerText += " - Lung Cancer";
     lung.classList.add("hide");
     theStart(lung.dataset.number);
@@ -361,7 +360,6 @@ skin.addEventListener("click", function () {
     cancertype = 1;
     initial.style.display = "none";
     submit.classList.remove("hide");
-    document.getElementById("title").innerText = "";
     title.innerText += " - Cutaneous Onc Cancer";
     lung.classList.add("hide");
     theStart(skin.dataset.number);
@@ -370,7 +368,6 @@ breast.addEventListener("click", function () {
     cancertype = 2;
     initial.style.display = "none";
     submit.classList.remove("hide");
-    document.getElementById("title").innerText = "";
     title.innerText += " - Breast Cancer";
     lung.classList.add("hide");
     theStart(breast.dataset.number);
@@ -379,7 +376,6 @@ urinary.addEventListener("click", function () {
     cancertype = 3;
     initial.style.display = "none";
     submit.classList.remove("hide");
-    document.getElementById("title").innerText = "";
     title.innerText += " - Genito - Urinary Cancer";
     lung.classList.add("hide");
     theStart(urinary.dataset.number);
