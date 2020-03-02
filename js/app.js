@@ -74,6 +74,10 @@ class Trials {
             //creating the breadCrumb trail
             crumbs.innerText += " " + nodesClickedName + " - ";
             nodesToFollow.forEach(element => {
+                let createdDiv = document.createElement("div");
+                document.getElementById("nodesHere").append(createdDiv);
+
+
                 let createdNode = document.createElement("input");
                 createdNode.type = "button";
                 createdNode.classList.add("large-6");
@@ -81,7 +85,7 @@ class Trials {
                 createdNode.value = this.gettingNodeName(element);
                 
                 let iButton = document.createElement("button");
-                iButton.innerHTML = "x";
+                iButton.innerHTML = "i";
                 iButton.classList.add("i-button");
 
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
@@ -90,9 +94,9 @@ class Trials {
                 console.log(createdNode.dataset.desc);
                 
 
-                document.getElementById("nodesHere").append(createdNode);
+                createdDiv.append(createdNode);
                 
-                createdNode.insertBefore(iButton);
+                createdDiv.insertBefore(iButton, createdNode);
 
                 createdNode.addEventListener("click", function () {
                     // giving flag the value of the data-number to be used by the submit button
