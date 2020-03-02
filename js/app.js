@@ -89,6 +89,7 @@ class Trials {
                 
                 let iButton = document.createElement("button");
                 iButton.innerHTML = "i";
+                // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
 
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.

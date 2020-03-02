@@ -139,11 +139,16 @@ input[type=submit] {
 
 
 .i-button{
-	width: 10px;
-	height: 10px;
+	width: 25px;
+	height: 25px;
 	position: relative;
 	float: right;
-	background-color: #3a2828;
-	top: -10px;
+	background-color: #000000;
+	border: 2px solid black;
+	color: rgb(255, 255, 255);
+	border-radius: 60%;
+	top: 10px;
+	right: 5px;
+	
 	
 }
