@@ -64,10 +64,11 @@ input[type=button] {
 	margin-right: auto;
 	text-align: center;
 	font-weight: bolder;
-	font-size: 40px;
+	font-size: 20px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	color: #1d1d1d;
+	color: #3b1c1c;
 	margin-top: 5%;
+	padding-bottom: 40px;
 }
 
 /* submit button styles */
