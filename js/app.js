@@ -80,19 +80,25 @@ class Trials {
                 // getting the value from a function created just to get name of the nodes while passing it the node we want the name of.
                 createdNode.value = this.gettingNodeName(element);
                 
+                let iButton = document.createElement("button");
+                iButton.innerHTML = "x";
+                iButton.classList.add("i-button");
 
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
-                createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
+                // createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
                 console.log(createdNode.dataset.desc);
                 
 
                 document.getElementById("nodesHere").append(createdNode);
+                
+                createdNode.insertBefore(iButton);
 
                 createdNode.addEventListener("click", function () {
                     // giving flag the value of the data-number to be used by the submit button
-                    clickedNodeDesc = createdNode.dataset.desc;
+                    // clickedNodeDesc = createdNode.dataset.desc;
                     clickedNodeFlag = createdNode.dataset.number;
+
                 });
 
             })
