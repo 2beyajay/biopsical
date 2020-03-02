@@ -11,7 +11,7 @@
 
 /* background in body and styling */
 body {
-	background-image: url("../img/building.jpg");
+	background-image: url("../images/building.png");
 	background-repeat: repeat;
 	background-size: cover;
 	text-align: center;
