@@ -240,7 +240,7 @@ class Trials {
                         }
                     } else {
                         output = `There are no trials available.`;
-                        none = " No Trials";
+                        none.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
@@ -268,7 +268,7 @@ class Trials {
                         }
                     } else {
                         output = `There are no trials available.`;
-                        none = " No Trials"
+                        none.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
@@ -296,7 +296,7 @@ class Trials {
                         }
                     } else {
                         output = `There are no trials available.`;
-                        none = " No Trials"
+                        none.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
