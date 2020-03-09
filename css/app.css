@@ -93,6 +93,9 @@ input[type=submit] {
 	display: none;
 	margin: auto;
 }
+#print{
+	display: none;
+}
 /* focus styling on nodes */
 #nodesHere input:focus {
 	background-color: #707070;
