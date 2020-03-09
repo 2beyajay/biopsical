@@ -76,6 +76,7 @@ class Trials {
             divCrumb.innerText = nodesClickedName;
             divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
+            
             nodesToFollow.forEach(element => {
                 let createdDiv = document.createElement("div");
                 document.getElementById("nodesHere").append(createdDiv);
@@ -102,7 +103,7 @@ class Trials {
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
                 // createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
-                console.log(createdNode.dataset.desc);
+                
                 
 
                 createdDiv.append(createdNode);
@@ -110,12 +111,13 @@ class Trials {
                 createdDiv.insertBefore(iButton, createdNode);
                 
                 createdNode.addEventListener("click", function () {
+                    submit.disabled = false;
                     // giving flag the value of the data-number to be used by the submit button
                     // clickedNodeDesc = createdNode.dataset.desc;
                     clickedNodeFlag = createdNode.dataset.number;
 
                 });
-
+                
             })
         };
     }
@@ -195,9 +197,9 @@ class Trials {
         console.log(pathTaken)
         let joinedSuccessfulPath;
         //none is used to create the final breadCrumb Trail
-        let none = document.createElement("div");
+        
         let output = document.createElement("div");
-        none.classList.add("crumbBorder");
+        
         let finalCrumb = document.createElement("div");
         finalCrumb.classList.add("crumbBorder");
         //switch to keep track of what type of cancer
@@ -209,24 +211,25 @@ class Trials {
                         if (this.lungTrials[i].Availability) {
                             output.innerText = `You are eligible for ${this.lungTrials[i].name}`
                             finalCrumb.innerText = this.lungTrials[i].name;
-                            none = "";
+                            
                             break;
                         } else {
-                            output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
+                            output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
                             finalCrumb.innerText = this.lungTrials[i].name;
-                            none = "";
+                            
                             break;
                         }
                     } else {
-                        output = `There are no trials available.`;
-                        none.innerText = " No Trials."
+                        output.innerText = `There are no trials available.`;
+                        finalCrumb.innerText = " No Trials."
+                        
                     }
                 }
 
                 //outputs the result to the screen.
-                crumbs.append(none);
+                
                 crumbs.append(finalCrumb)
-                document.getElementById("title").innerText = ""
+                document.getElementById("title").innerText = "";
                 document.getElementById("nodesHere").append(output);
                 break;
 
@@ -236,23 +239,23 @@ class Trials {
                     joinedSuccessfulPath = this.skinTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.skinTrials[i].Availability) {
-                            output = `You are eligible for ${this.skinTrials[i].name}`
+                            output.innerText = `You are eligible for ${this.skinTrials[i].name}`
                             finalCrumb.innerText = this.skinTrials[i].name;
-                            none = "";
+                            
                             break;
                         } else {
-                            output = `The trial ${this.skinTrials[i].name} is not open to new patients.`
+                            output.innerText = `The trial ${this.skinTrials[i].name} is not open to new patients.`
                             finalCrumb.innerText = this.skinTrials[i].name;
-                            none = "";
+                            
                             break;
                         }
                     } else {
-                        output = `There are no trials available.`;
-                        none.innerText = " No Trials."
+                        output.innerText = `There are no trials available.`;
+                        finalCrumb.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
-                crumbs.append(none);
+                
                 crumbs.append(finalCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
@@ -264,23 +267,23 @@ class Trials {
                     joinedSuccessfulPath = this.breastTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.breastTrials[i].Availability) {
-                            output = `You are eligible for ${this.breastTrials[i].name}`
+                            output.innerText = `You are eligible for ${this.breastTrials[i].name}`
                             finalCrumb.innerText = this.breastTrials[i].name;
-                            none = "";
+                            
                             break;
                         } else {
-                            output = `The trial ${this.breastTrials[i].name} is not open to new patients.`
+                            output.innerText = `The trial ${this.breastTrials[i].name} is not open to new patients.`
                             finalCrumb.innerText = this.breastTrials[i].name;
-                            none = "";
+                            
                             break;
                         }
                     } else {
-                        output = `There are no trials available.`;
-                        none.innerText = " No Trials."
+                        output.innerText = `There are no trials available.`;
+                        finalCrumb.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
-                crumbs.append(none);
+                
                 crumbs.append(finalCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
@@ -292,23 +295,23 @@ class Trials {
                     joinedSuccessfulPath = this.urinaryTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
-                            output = `You are eligible for ${this.urinaryTrials[i].name}`
-                            finalCrumb.innerText = this.urinaryrials[i].name;
-                            none = "";
+                            output.innerText = `You are eligible for ${this.urinaryTrials[i].name}`
+                            finalCrumb.innerText = this.urinaryTrials[i].name;
+                            
                             break;
                         } else {
-                            output = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
+                            output.innerText = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
                             finalCrumb.innerText = this.urinaryTrials[i].name;
-                            none = "";
+                            
                             break;
                         }
                     } else {
-                        output = `There are no trials available.`;
-                        none.innerText = " No Trials."
+                        output.innerText = `There are no trials available.`;
+                        finalCrumb.innerText = " No Trials."
                     }
                 }
                 //outputs the result to the screen.
-                crumbs.append(none);
+                
                 crumbs.append(finalCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
@@ -365,6 +368,7 @@ let initial = document.getElementById("initialOptions");
 let crumbs = document.getElementById("breadCrumbs");
 let title = document.getElementById("mainTitle");
 let divCrumb = document.createElement("div");
+let clickedList = [];
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
@@ -406,10 +410,12 @@ urinary.addEventListener("click", function () {
 submit.addEventListener("click", getNew);
 
 function getNew() {
-    
+    submit.disabled = true;
     theStart(clickedNodeFlag);
-
+    
 }
+
+
 
 function theStart(nodeClicked) {
 
