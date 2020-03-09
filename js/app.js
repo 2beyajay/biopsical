@@ -415,13 +415,7 @@ function getNew() {
     
 }
 
-function onElementFocused(){
-    
 
-    if(document.activeElement != document.body){
-        document.activeElement.blur();
-    }
-}
 
 function theStart(nodeClicked) {
 
