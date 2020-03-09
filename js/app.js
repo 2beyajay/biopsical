@@ -39,22 +39,22 @@ class Trials {
         switch (cancertype) {
             case 0:
                 nodeClickedInfo = this.lungNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('img/background.svg')";
 
                 break;
             case 1:
                 nodeClickedInfo = this.skinNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('img/background.svg')";
 
                 break;
             case 2:
                 nodeClickedInfo = this.breastNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('./img/background.svg')";
 
                 break;
             case 3:
                 nodeClickedInfo = this.urinaryNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('./img/background.svg')";
 
                 break;
         }
