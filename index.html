@@ -49,6 +49,18 @@
         </div>
 
 
+
+        </div>
+
+        <!-- first page static buttons -->
+        <div id="initialOptions" class="large-12 medium-12 small-6 columns grid-x grid-padding-x">
+            <input class="large-6" type="button" value="Breast" id="breast" data-number="0"><br>
+            <input class="large-6" type="button" value="Genetio - Urinary" id="urinary" data-number="0"><br>
+            <input class="large-6" type="button" value="Lung" id="lung" data-number="0"><br>
+            <input class="large-6" type="button" value="Cutaneous Onc" id="skin" data-number="0"><br>
+        </div>
+
+
         <br><br>
         <!-- submit button section -->
         <div class="large-12 medium-12 small-12 columns" id="btnSubmit">
@@ -56,6 +68,25 @@
             <input class="button hide" id="reset">
         </div>
     </div>
+
+
+    <div class="reveal" id="exampleModal1" data-reveal>
+        <h1>Your results.</h1>
+        <p class="lead">
+            <div id="result">
+                cancer
+            </div>
+        </p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    </div><br><br>
+    <p><button class="i-button" data-open="exampleModal1">Information</button></p>
+
+
+
 
 </body>
 <!-- body end -->
