@@ -97,7 +97,7 @@ input[type=submit] {
 	display: none;
 }
 #printPage{
-	display: none;
+	
 }
 /* focus styling on nodes */
 #nodesHere input:focus {

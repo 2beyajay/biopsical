@@ -216,7 +216,7 @@ class Trials {
                             finalCrumb.innerText = this.lungTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
-                            PrintP.style.display = "block";
+                            printP.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
@@ -248,6 +248,7 @@ class Trials {
                             finalCrumb.innerText = this.skinTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
+                            printP.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.skinTrials[i].name} is not open to new patients.`
@@ -277,6 +278,7 @@ class Trials {
                             finalCrumb.innerText = this.breastTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
+                            printP.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.breastTrials[i].name} is not open to new patients.`
@@ -306,6 +308,7 @@ class Trials {
                             finalCrumb.innerText = this.urinaryTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
+                            printP.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
@@ -379,6 +382,9 @@ let divCrumb = document.createElement("div");
 let contact = document.getElementById("contact");
 let print = document.getElementById("print");
 let printP = document.getElementById("printPage");
+printP.style.display = "none";
+console.log(printP.style.display);
+
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
