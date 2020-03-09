@@ -96,6 +96,9 @@ input[type=submit] {
 #print{
 	display: none;
 }
+#printPage{
+	display: none;
+}
 /* focus styling on nodes */
 #nodesHere input:focus {
 	background-color: #707070;
