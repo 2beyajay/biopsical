@@ -134,11 +134,15 @@ input[type=submit] {
 
 /* reset button svg currently working on it */
 #reset {
+	height: 100px !important;
+	width: 100px;
 	text-align: center;
 	background-image: url('../images/refresh.svg');
 	background-repeat: no-repeat;
-	background-color: white;
+	background-color: transparent;
 	color:rgb(255, 255, 255);
+	border: none;
+	padding: 0em 0em;
 }
 
 
