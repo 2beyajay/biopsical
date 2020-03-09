@@ -293,7 +293,7 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
                             output = `You are eligible for ${this.urinaryTrials[i].name}`
-                            finalCrumb.innerText = this.urinaryrials[i].name;
+                            finalCrumb.innerText = this.urinaryTrials[i].name;
                             none = "";
                             break;
                         } else {
