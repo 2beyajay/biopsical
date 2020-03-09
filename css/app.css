@@ -89,7 +89,10 @@ input[type=submit] {
 	display: flex;
 	color: #000000;
 }
-
+#contact{
+	display: none;
+	margin: auto;
+}
 /* focus styling on nodes */
 #nodesHere input:focus {
 	background-color: #707070;
