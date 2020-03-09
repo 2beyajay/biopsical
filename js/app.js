@@ -212,20 +212,20 @@ class Trials {
                     joinedSuccessfulPath = this.lungTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.lungTrials[i].Availability) {
-                            output.innerText = `You are eligible for ${this.lungTrials[i].name}`
+                            output.innerHTML = `You are eligible for <span class="result-focus">${this.lungTrials[i].name}</span>`
                             finalCrumb.innerText = this.lungTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
-                            output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
+                            output.innerHTML = `The trial ${this.lungTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
                             finalCrumb.innerText = this.lungTrials[i].name;
                             
                             break;
                         }
                     } else {
-                        output.innerText = `There are no trials available.`;
+                        output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
                         finalCrumb.innerText = " No Trials.";
                         
                     }
@@ -244,20 +244,20 @@ class Trials {
                     joinedSuccessfulPath = this.skinTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.skinTrials[i].Availability) {
-                            output.innerText = `You are eligible for ${this.skinTrials[i].name}`
+                            output.innerHTML = `You are eligible for <span class="result-focus">${this.skinTrials[i].name}</span>`
                             finalCrumb.innerText = this.skinTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
-                            output.innerText = `The trial ${this.skinTrials[i].name} is not open to new patients.`
+                            output.innerHTML = `The trial ${this.skinTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
                             finalCrumb.innerText = this.skinTrials[i].name;
                             
                             break;
                         }
                     } else {
-                        output.innerText = `There are no trials available.`;
+                        output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
                         finalCrumb.innerText = " No Trials.";
                     }
                 }
@@ -274,20 +274,20 @@ class Trials {
                     joinedSuccessfulPath = this.breastTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.breastTrials[i].Availability) {
-                            output.innerText = `You are eligible for ${this.breastTrials[i].name}`
+                            output.innerHTML = `You are eligible for <span class="result-focus">${this.breastTrials[i].name}</span>`
                             finalCrumb.innerText = this.breastTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
-                            output.innerText = `The trial ${this.breastTrials[i].name} is not open to new patients.`
+                            output.innerHTML = `The trial ${this.breastTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
                             finalCrumb.innerText = this.breastTrials[i].name;
                             
                             break;
                         }
                     } else {
-                        output.innerText = `There are no trials available.`;
+                        output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
                         finalCrumb.innerText = " No Trials.";
                     }
                 }
@@ -304,20 +304,20 @@ class Trials {
                     joinedSuccessfulPath = this.urinaryTrials[i].pathToSuccessfulTrial.join("");
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
-                            output.innerText = `You are eligible for ${this.urinaryTrials[i].name}`
+                            output.innerHTML = `You are eligible for <span class="result-focus">${this.urinaryTrials[i].name}</span>`
                             finalCrumb.innerText = this.urinaryTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
-                            output.innerText = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
+                            output.innerHTML = `The trial ${this.urinaryTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
                             finalCrumb.innerText = this.urinaryTrials[i].name;
                             
                             break;
                         }
                     } else {
-                        output.innerText = `There are no trials available.`;
+                        output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
                         finalCrumb.innerText = " No Trials.";
                     }
                 }
