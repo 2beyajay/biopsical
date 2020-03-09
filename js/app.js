@@ -76,6 +76,7 @@ class Trials {
             divCrumb.innerText = nodesClickedName;
             divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
+            
             nodesToFollow.forEach(element => {
                 let createdDiv = document.createElement("div");
                 document.getElementById("nodesHere").append(createdDiv);
@@ -102,7 +103,7 @@ class Trials {
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
                 // createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
-                console.log(createdNode.dataset.desc);
+                
                 
 
                 createdDiv.append(createdNode);
@@ -115,7 +116,7 @@ class Trials {
                     clickedNodeFlag = createdNode.dataset.number;
 
                 });
-
+                
             })
         };
     }
@@ -365,6 +366,7 @@ let initial = document.getElementById("initialOptions");
 let crumbs = document.getElementById("breadCrumbs");
 let title = document.getElementById("mainTitle");
 let divCrumb = document.createElement("div");
+let clickedList = [];
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
@@ -406,9 +408,17 @@ urinary.addEventListener("click", function () {
 submit.addEventListener("click", getNew);
 
 function getNew() {
-    
+    onElementFocused();
     theStart(clickedNodeFlag);
+    
+}
 
+function onElementFocused(){
+    
+
+    if(document.activeElement != document.body){
+        document.activeElement.blur();
+    }
 }
 
 function theStart(nodeClicked) {
