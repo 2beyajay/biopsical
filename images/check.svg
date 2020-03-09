@@ -1,3 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-  <path id="correct" d="M13,0A13,13,0,1,0,26,13,13.014,13.014,0,0,0,13,0Zm6.589,10.245-7.042,7.042a1.082,1.082,0,0,1-1.532,0L7.495,13.766a1.083,1.083,0,0,1,1.532-1.532l2.755,2.755,6.276-6.276a1.083,1.083,0,0,1,1.532,1.532Zm0,0" fill="#f8f8f8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.24 133.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f8f8;
+      }
+
+      .cls-2 {
+        fill: gray;
+      }
+    </style>
+  </defs>
+  <title>Asset 4</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle class="cls-1" cx="66.62" cy="66.62" r="66.62"/>
+      <g>
+        <rect class="cls-2" x="44.96" y="63.57" width="12" height="34.02" rx="6" transform="translate(-42.5 61.71) rotate(-46.28)"/>
+        <rect class="cls-2" x="71.1" y="36.89" width="12" height="64.74" rx="6" transform="translate(69.25 -34.08) rotate(43.72)"/>
+      </g>
+    </g>
+  </g>
 </svg>
