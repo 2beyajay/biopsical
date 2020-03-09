@@ -90,6 +90,9 @@ class Trials {
                 
                 let iButton = document.createElement("button");
                 iButton.innerHTML = "i";
+
+                // adding the modal data attribute
+                iButton.setAttribute("data-open", "exampleModal1");
                 // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
 
@@ -213,6 +216,7 @@ class Trials {
                             finalCrumb.innerText = this.lungTrials[i].name;
                             contact.style.display = "block";
                             print.style.display = "block";
+                            PrintP.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
@@ -374,6 +378,7 @@ let title = document.getElementById("mainTitle");
 let divCrumb = document.createElement("div");
 let contact = document.getElementById("contact");
 let print = document.getElementById("print");
+let printP = document.getElementById("printPage");
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
