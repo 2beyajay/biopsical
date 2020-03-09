@@ -385,6 +385,9 @@ let printP = document.getElementById("printPage");
 printP.style.display = "none";
 console.log(printP.style.display);
 
+printP.addEventListener("click", function (){
+    window.print();
+})
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
