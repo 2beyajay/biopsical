@@ -198,7 +198,7 @@ class Trials {
         //none is used to create the final breadCrumb Trail
         
         let output = document.createElement("div");
-        none.classList.add("crumbBorder");
+        
         let finalCrumb = document.createElement("div");
         finalCrumb.classList.add("crumbBorder");
         //switch to keep track of what type of cancer
