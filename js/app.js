@@ -212,13 +212,13 @@ class Trials {
                             none = "";
                             break;
                         } else {
-                            output = `The trial ${this.lungTrials[i].name} is not open to new patients.`
+                            output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
                             finalCrumb.innerText = this.lungTrials[i].name;
                             none = "";
                             break;
                         }
                     } else {
-                        output = `There are no trials available.`;
+                        output.innerText = `There are no trials available.`;
                         none.innerText = " No Trials."
                     }
                 }
@@ -226,7 +226,7 @@ class Trials {
                 //outputs the result to the screen.
                 crumbs.append(none);
                 crumbs.append(finalCrumb)
-                document.getElementById("title").innerText = ""
+                document.getElementById("title").innerText = "";
                 document.getElementById("nodesHere").append(output);
                 break;
 
