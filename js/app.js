@@ -211,7 +211,8 @@ class Trials {
                         if (this.lungTrials[i].Availability) {
                             output.innerText = `You are eligible for ${this.lungTrials[i].name}`
                             finalCrumb.innerText = this.lungTrials[i].name;
-                            
+                            contact.style.display = "block";
+                            print.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.lungTrials[i].name} is not open to new patients.`
@@ -221,7 +222,7 @@ class Trials {
                         }
                     } else {
                         output.innerText = `There are no trials available.`;
-                        finalCrumb.innerText = " No Trials."
+                        finalCrumb.innerText = " No Trials.";
                         
                     }
                 }
@@ -241,7 +242,8 @@ class Trials {
                         if (this.skinTrials[i].Availability) {
                             output.innerText = `You are eligible for ${this.skinTrials[i].name}`
                             finalCrumb.innerText = this.skinTrials[i].name;
-                            
+                            contact.style.display = "block";
+                            print.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.skinTrials[i].name} is not open to new patients.`
@@ -251,7 +253,7 @@ class Trials {
                         }
                     } else {
                         output.innerText = `There are no trials available.`;
-                        finalCrumb.innerText = " No Trials."
+                        finalCrumb.innerText = " No Trials.";
                     }
                 }
                 //outputs the result to the screen.
@@ -269,7 +271,8 @@ class Trials {
                         if (this.breastTrials[i].Availability) {
                             output.innerText = `You are eligible for ${this.breastTrials[i].name}`
                             finalCrumb.innerText = this.breastTrials[i].name;
-                            
+                            contact.style.display = "block";
+                            print.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.breastTrials[i].name} is not open to new patients.`
@@ -279,7 +282,7 @@ class Trials {
                         }
                     } else {
                         output.innerText = `There are no trials available.`;
-                        finalCrumb.innerText = " No Trials."
+                        finalCrumb.innerText = " No Trials.";
                     }
                 }
                 //outputs the result to the screen.
@@ -297,7 +300,8 @@ class Trials {
                         if (this.urinaryTrials[i].Availability) {
                             output.innerText = `You are eligible for ${this.urinaryTrials[i].name}`
                             finalCrumb.innerText = this.urinaryTrials[i].name;
-                            
+                            contact.style.display = "block";
+                            print.style.display = "block";
                             break;
                         } else {
                             output.innerText = `The trial ${this.urinaryTrials[i].name} is not open to new patients.`
@@ -307,7 +311,7 @@ class Trials {
                         }
                     } else {
                         output.innerText = `There are no trials available.`;
-                        finalCrumb.innerText = " No Trials."
+                        finalCrumb.innerText = " No Trials.";
                     }
                 }
                 //outputs the result to the screen.
@@ -368,7 +372,8 @@ let initial = document.getElementById("initialOptions");
 let crumbs = document.getElementById("breadCrumbs");
 let title = document.getElementById("mainTitle");
 let divCrumb = document.createElement("div");
-let clickedList = [];
+let contact = document.getElementById("contact");
+let print = document.getElementById("print");
 
 // putting the event listeners on the initial buttons
 lung.addEventListener("click", function () {
