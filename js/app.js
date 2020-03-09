@@ -111,6 +111,7 @@ class Trials {
                 createdDiv.insertBefore(iButton, createdNode);
                 
                 createdNode.addEventListener("click", function () {
+                    submit.disabled = false;
                     // giving flag the value of the data-number to be used by the submit button
                     // clickedNodeDesc = createdNode.dataset.desc;
                     clickedNodeFlag = createdNode.dataset.number;
@@ -409,7 +410,7 @@ urinary.addEventListener("click", function () {
 submit.addEventListener("click", getNew);
 
 function getNew() {
-    onElementFocused();
+    submit.disabled = true;
     theStart(clickedNodeFlag);
     
 }
