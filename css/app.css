@@ -137,6 +137,8 @@ input[type=submit] {
 	margin-left: 25px;
 	border: 0px solid black;
 	background-color: #808080;
+	border: #808080 2px solid;
+	box-sizing: border-box;
 	display: inline;
 	padding: 10px 20px;
 	/* padding: 9px; */
