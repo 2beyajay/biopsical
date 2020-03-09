@@ -90,6 +90,9 @@ class Trials {
                 
                 let iButton = document.createElement("button");
                 iButton.innerHTML = "i";
+
+                // adding the modal data attribute
+                iButton.setAttribute("data-open", "exampleModal1");
                 // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
 
