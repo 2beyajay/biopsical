@@ -92,6 +92,13 @@ class Trials {
                 // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
 
+                // $('.i-button').reveal({
+                //     animation: 'fadeAndPop',
+                //     animationspeed: 300,
+                //     closeOnBackgroundClick: true,
+                //     dismissModalClass: 'close-reveal-modal'
+                // });
+
                 // setting the data-number of the created element by using the function solely for getting the node number of the specific node.
                 createdNode.setAttribute('data-number', this.gettingNodeNumber(element));
                 // createdNode.setAttribute('data-desc', this.gettingNodeDesc(element));
@@ -101,7 +108,7 @@ class Trials {
                 createdDiv.append(createdNode);
                 
                 createdDiv.insertBefore(iButton, createdNode);
-
+                
                 createdNode.addEventListener("click", function () {
                     // giving flag the value of the data-number to be used by the submit button
                     // clickedNodeDesc = createdNode.dataset.desc;

@@ -2,7 +2,6 @@
 #title {
 	text-align: "center";
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	padding: 20px;
 	font-weight: 600;
 	color: #1d1d1d;
 	font-size: 1.75em;
@@ -134,10 +133,12 @@ input[type=submit] {
 }
 
 /* reset button svg currently working on it */
-#btnReset {
-	width: 50px;
-	height: 50px;
+#reset {
 	text-align: center;
+	background-image: url('../images/refresh.svg');
+	background-repeat: no-repeat;
+	background-color: white;
+	color:rgb(255, 255, 255);
 }
 
 
