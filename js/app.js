@@ -39,22 +39,22 @@ class Trials {
         switch (cancertype) {
             case 0:
                 nodeClickedInfo = this.lungNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('img/background.svg')";
 
                 break;
             case 1:
                 nodeClickedInfo = this.skinNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('img/background.svg')";
 
                 break;
             case 2:
                 nodeClickedInfo = this.breastNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('./img/background.svg')";
 
                 break;
             case 3:
                 nodeClickedInfo = this.urinaryNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('background.svg')";
+                document.body.style.backgroundImage = "url('./img/background.svg')";
 
                 break;
         }
@@ -73,7 +73,9 @@ class Trials {
         } else {
             //creating the breadCrumb trail
             let divCrumb = document.createElement("div");
-            divCrumb.innerText = nodesClickedName;
+            let theCrumbP = document.createElement("p");
+            theCrumbP.innerText = nodesClickedName;
+            divCrumb.append(theCrumbP);
             divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
             
@@ -95,6 +97,7 @@ class Trials {
                 iButton.setAttribute("data-open", "exampleModal1");
                 // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
+
 
                 // $('.i-button').reveal({
                 //     animation: 'fadeAndPop',
@@ -202,9 +205,12 @@ class Trials {
         //none is used to create the final breadCrumb Trail
         
         let output = document.createElement("div");
+        let divCrumb = document.createElement("div");
+        let theCrumbP = document.createElement("p");
         
+        divCrumb.append(theCrumbP);
         let finalCrumb = document.createElement("div");
-        finalCrumb.classList.add("crumbBorder");
+        divCrumb.classList.add("crumbBorder");
         //switch to keep track of what type of cancer
         switch (cancertype) {
             case 0:
@@ -213,27 +219,28 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.lungTrials[i].Availability) {
                             output.innerHTML = `You are eligible for <span class="result-focus">${this.lungTrials[i].name}</span>`
-                            finalCrumb.innerText = this.lungTrials[i].name;
+                            theCrumbP.innerText = this.lungTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
                             output.innerHTML = `The trial ${this.lungTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
-                            finalCrumb.innerText = this.lungTrials[i].name;
-                            
+                            theCrumbP.innerText = this.lungTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             break;
                         }
                     } else {
                         output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
-                        finalCrumb.innerText = " No Trials.";
-                        
+                        theCrumbP.innerText = " No Trials.";
+                        divCrumb.append(theCrumbP)
                     }
                 }
 
                 //outputs the result to the screen.
                 
-                crumbs.append(finalCrumb)
+                crumbs.append(divCrumb)
                 document.getElementById("title").innerText = "";
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -245,25 +252,27 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.skinTrials[i].Availability) {
                             output.innerHTML = `You are eligible for <span class="result-focus">${this.skinTrials[i].name}</span>`
-                            finalCrumb.innerText = this.skinTrials[i].name;
+                            theCrumbP.innerText = this.skinTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
                             output.innerHTML = `The trial ${this.skinTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
-                            finalCrumb.innerText = this.skinTrials[i].name;
-                            
+                            theCrumbP.innerText = this.skinTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             break;
                         }
                     } else {
                         output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
-                        finalCrumb.innerText = " No Trials.";
+                        theCrumbP.innerText = " No Trials.";
+                        divCrumb.append(theCrumbP)
                     }
                 }
                 //outputs the result to the screen.
                 
-                crumbs.append(finalCrumb)
+                crumbs.append(divCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -275,25 +284,27 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.breastTrials[i].Availability) {
                             output.innerHTML = `You are eligible for <span class="result-focus">${this.breastTrials[i].name}</span>`
-                            finalCrumb.innerText = this.breastTrials[i].name;
+                            theCrumbP.innerText = this.breastTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
                             output.innerHTML = `The trial ${this.breastTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
-                            finalCrumb.innerText = this.breastTrials[i].name;
-                            
+                            theCrumbP.innerText = this.breastTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             break;
                         }
                     } else {
                         output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
-                        finalCrumb.innerText = " No Trials.";
+                        theCrumbP.innerText = " No Trials.";
+                        divCrumb.append(theCrumbP)
                     }
                 }
                 //outputs the result to the screen.
                 
-                crumbs.append(finalCrumb)
+                crumbs.append(divCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
@@ -305,25 +316,27 @@ class Trials {
                     if (pathTaken == joinedSuccessfulPath) {
                         if (this.urinaryTrials[i].Availability) {
                             output.innerHTML = `You are eligible for <span class="result-focus">${this.urinaryTrials[i].name}</span>`
-                            finalCrumb.innerText = this.urinaryTrials[i].name;
+                            theCrumbP.innerText = this.urinaryTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             contact.style.display = "block";
                             print.style.display = "block";
                             printP.style.display = "block";
                             break;
                         } else {
                             output.innerHTML = `The trial ${this.urinaryTrials[i].name} is <span class="result-focus">not open</span> to new patients.`
-                            finalCrumb.innerText = this.urinaryTrials[i].name;
-                            
+                            theCrumbP.innerText = this.urinaryTrials[i].name;
+                            divCrumb.append(theCrumbP)
                             break;
                         }
                     } else {
                         output.innerHTML = `There are <span class="result-focus">no trials</span> available.`;
-                        finalCrumb.innerText = " No Trials.";
+                        theCrumbP.innerText = " No Trials.";
+                        divCrumb.append(theCrumbP)
                     }
                 }
                 //outputs the result to the screen.
                 
-                crumbs.append(finalCrumb)
+                crumbs.append(divCrumb)
                 document.getElementById("title").innerText = ""
                 document.getElementById("nodesHere").append(output);
                 break;
