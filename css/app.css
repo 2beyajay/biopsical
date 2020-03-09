@@ -160,3 +160,20 @@ input[type=submit] {
 	
 	
 }
+
+/* Media query for mobile view */
+@media (max-width:600px)
+{
+body {
+	background-image: url(../img/white.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#initialOptions,
+#nodesHere {
+	display: block;
+	color: #000000;
+}
+
+}
