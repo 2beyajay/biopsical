@@ -138,11 +138,19 @@ input[type=submit] {
 	border: #808080 2px solid;
 	box-sizing: border-box;
 	display: inline;
-	padding: 10px 20px;
+	padding: 0px 20px;
+
 	/* padding: 9px; */
 	border-radius: 7px;
 	letter-spacing: 1.25px;
 	color: white;
+
+	display: flex;
+	align-items: center;
+}
+
+.crumbBorder p{
+	margin-bottom: 0;
 }
 
 /* reset button svg currently working on it */
