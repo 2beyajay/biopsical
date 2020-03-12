@@ -97,6 +97,7 @@ class Trials {
                 iButton.setAttribute("data-open", "exampleModal1");
                 // iButton.setAttribute("src", "../images/i.png");
                 iButton.classList.add("i-button");
+                iButton.setAttribute('data-desc', this.gettingNodeDesc(element));
 
 
                 // $('.i-button').reveal({
@@ -119,11 +120,17 @@ class Trials {
                 createdNode.addEventListener("click", function () {
                     submit.disabled = false;
                     // giving flag the value of the data-number to be used by the submit button
-                    // clickedNodeDesc = createdNode.dataset.desc;
+                    clickedNodeDesc = iButton.dataset.desc;
                     clickedNodeFlag = createdNode.dataset.number;
 
                 });
                 
+                iButton.addEventListener('click', function (){
+                    let iTitle = document.querySelector('h1');
+                    let iDesc = document.querySelector('#result');
+                    iTitle.innerText = createdNode.value;
+                    iDesc.innerText = this.dataset.desc;
+                })
             })
         };
     }
