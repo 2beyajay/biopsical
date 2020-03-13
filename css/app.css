@@ -223,3 +223,13 @@ text-align: center;
 	float: left;
 }
 }
+
+h1{
+	font-family: 'Crimson Text', serif !important;
+}
+
+div#result{
+	font-family: 'Lemonada', cursive;
+	font-size: 15px;
+	
+}
