@@ -120,16 +120,9 @@ input[type=submit] {
 	color: #f8f8f8;
 }
 
+
 /* breadCrumbs showing path - styling  */
-#breadCrumbs {
-	
-	font-size: 14px;
-	font-weight: 600;
-	color: darkred;
-	border: 10px;
-	display: flex;
-	justify-content: center;
-}
+
 
 .crumbBorder {
 	margin-left: 25px;
@@ -213,4 +206,16 @@ input[type=submit] {
 		display: block;
 		color: #000000;
 	}
+}
+@media (max-width:601px){
+#breadCrumbs, div.crumbBorder {
+	width: auto;
+	margin-bottom: 5px;
+}
+}
+@media (min-width:601px){
+#breadCrumbs, div.crumbBorder {
+	width: auto;
+	float: left;
+}
 }
