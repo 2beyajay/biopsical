@@ -120,13 +120,6 @@ input[type=submit] {
 	color: #f8f8f8;
 }
 
-
-/* breadCrumbs showing path - styling  */
-div#breadCrumbs{
-	margin: 0 auto;
-	
-}
-
 .crumbBorder {
 	margin-left: 25px;
 	border: 0px solid black;
