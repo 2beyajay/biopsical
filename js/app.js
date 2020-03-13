@@ -27,7 +27,7 @@ class Trials {
         // using the nodeClicked value to fetch the correct node. 
         this.fetchNodes(nodeClicked, cancertype);
         pathTaken.push(nodeClicked);
-
+        
     }
 
 
@@ -453,7 +453,6 @@ function getNew() {
     theStart(clickedNodeFlag);
     
 }
-
 
 
 function theStart(nodeClicked) {

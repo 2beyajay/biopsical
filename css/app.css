@@ -89,11 +89,13 @@ input[type=submit] {
 	display: flex;
 	color: #000000;
 }
-#contact{
+
+#contact {
 	display: none;
 	margin: auto;
 }
-#print{
+
+#print {
 	display: none;
 }
 
@@ -133,12 +135,12 @@ input[type=submit] {
 	border-radius: 7px;
 	letter-spacing: 1.25px;
 	color: white;
-text-align: center;
+	text-align: center;
 	display: flex;
 	align-items: center;
 }
 
-.crumbBorder p{
+.crumbBorder p {
 	margin-bottom: 0;
 }
 
@@ -173,13 +175,13 @@ text-align: center;
 
 }
 
-.reveal{
+.reveal {
 	margin: 0 auto;
 	position: relative;
 
 }
 
-#exampleModal1{
+#exampleModal1 {
 	margin: 0 auto;
 }
 
@@ -189,6 +191,11 @@ text-align: center;
 	font-weight: 800;
 }
 
+/* Animation for .i-button */
+.i-button:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.8);
+}
 
 /* Media query for mobile view */
 @media (max-width:600px) {
@@ -205,25 +212,31 @@ text-align: center;
 		color: #000000;
 	}
 }
-@media (max-width:601px){
-#breadCrumbs, div.crumbBorder {
-	width: auto;
-	margin-bottom: 5px;
-}
-}
-@media (min-width:601px){
-#breadCrumbs, div.crumbBorder {
-	width: auto;
-	float: left;
-}
+
+@media (max-width:601px) {
+
+	#breadCrumbs,
+	div.crumbBorder {
+		width: auto;
+		margin-bottom: 5px;
+	}
 }
 
-h1{
+@media (min-width:601px) {
+
+	#breadCrumbs,
+	div.crumbBorder {
+		width: auto;
+		float: left;
+	}
+}
+
+h1 {
 	font-family: 'Crimson Text', serif !important;
 }
 
-div#result{
+div#result {
 	font-family: 'Lemonada', cursive;
 	font-size: 15px;
-	
+
 }
