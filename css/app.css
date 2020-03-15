@@ -197,6 +197,11 @@ input[type=submit] {
 	transform: scale(1.8);
 }
 
+#btnSubmit{
+	display: flex;
+}
+
+
 /* Media query for mobile view */
 @media (max-width:600px) {
 	body {
@@ -211,6 +216,9 @@ input[type=submit] {
 		display: block;
 		color: #000000;
 	}
+	p{
+		text-align: center;
+	}
 }
 
 @media (max-width:601px) {
@@ -219,6 +227,7 @@ input[type=submit] {
 	div.crumbBorder {
 		width: auto;
 		margin-bottom: 5px;
+		text-align: center;
 	}
 }
 
