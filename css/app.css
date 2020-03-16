@@ -239,7 +239,6 @@ input[type=submit] {
 	#breadCrumbs,
 	div.crumbBorder {
 		width: auto;
-		float: left;
 	}
 }
 
