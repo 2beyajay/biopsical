@@ -224,14 +224,10 @@ input[type=submit] {
 	input[type=button] {
 		
 		margin: 0 auto;
-		margin-bottom: 5%;
 		margin-right: 1%;
 		height: 50px;
 		text-align: center;
-		width: 320px;
-
-		margin-bottom: 2%;
-		
+		width: 320px;	
 		padding: auto;
 		font-size: 15pt;
 		border: none;
