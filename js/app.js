@@ -81,10 +81,10 @@ class Trials {
             let theCorrect = document.createElement("img");
             let theCrumbP = document.createElement("p");
             theCrumbP.innerText = nodesClickedName;
-            divCrumb.append(theCrumbP);
             theCorrect.setAttribute("src", "img/correct.png");
-            divCrumb.classList.add("crumbBorder");
             divCrumb.append(theCorrect);
+            divCrumb.append(theCrumbP);
+            divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
             
             //loop that runs through each element of the array nodesToFollow

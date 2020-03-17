@@ -131,7 +131,7 @@ input[type=submit] {
 	background-color: #808080;
 	border: #808080 2px solid;
 	box-sizing: border-box;
-	display: inline;
+	display: inline-flex !important;
 	padding: 0px 20px;
 	/* padding: 9px; */
 	border-radius: 7px;
@@ -151,7 +151,7 @@ input[type=submit] {
 /* history blocks text */
 .crumbBorder p {
 	margin-bottom: 0;
-	
+	padding-left: 10px;
 }
 
 /* reset button svg currently working on it */
