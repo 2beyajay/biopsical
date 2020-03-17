@@ -221,6 +221,25 @@ input[type=submit] {
 	p{
 		text-align: center;
 	}
+	input[type=button] {
+		
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-right: 1%;
+		height: 50px;
+		text-align: center;
+		width: 320px;
+
+		margin-bottom: 2%;
+		
+		padding: auto;
+		font-size: 15pt;
+		border: none;
+		font-family: 'Raleway', sans-serif;
+	}
+	#initialOptions input{
+		margin-bottom: 15%;
+	}
 }
 
 @media (max-width:601px) {
@@ -231,6 +250,7 @@ input[type=submit] {
 		margin-bottom: 5px;
 		text-align: center;
 	}
+
 
 }
 
