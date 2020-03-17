@@ -205,7 +205,7 @@ input[type=submit] {
 
 
 /* Media query for mobile view */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:601px) {
 	body {
 		background-image: url(../img/white.jpg);
 		background-repeat: no-repeat;
@@ -240,18 +240,12 @@ input[type=submit] {
 	#initialOptions input{
 		margin-bottom: 15%;
 	}
-}
-
-@media only screen and (max-width:601px) {
-
 	#breadCrumbs,
 	div.crumbBorder {
 		width: auto;
 		margin-bottom: 5px;
 		text-align: center;
 	}
-
-
 }
 
 @media only screen and (min-width:601px) {
