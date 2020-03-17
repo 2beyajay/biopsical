@@ -158,7 +158,7 @@ input[type=submit] {
 	border: none;
 	padding: 0em 0em;
 	margin-top: 5px !important;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 
@@ -173,8 +173,6 @@ input[type=submit] {
 	border-radius: 60%;
 	top: 10px;
 	right: 5px;
-
-
 }
 
 .reveal {
@@ -199,10 +197,10 @@ input[type=submit] {
 	transform: scale(1.8);
 }
 
-#btnSubmit{
-	display: flex;
+#printReset{
+	display: inline-flex;
+    margin: 0 auto;
 }
-
 
 /* Media query for mobile view */
 @media only screen and (max-width:601px) {
@@ -225,6 +223,7 @@ input[type=submit] {
 		
 		margin: 0 auto;
 		margin-right: 1%;
+		margin-bottom: 7%;
 		height: 50px;
 		text-align: center;
 		width: 320px;	
