@@ -205,7 +205,7 @@ input[type=submit] {
 
 
 /* Media query for mobile view */
-@media (max-width:600px) {
+@media only screen and (max-width:600px) {
 	body {
 		background-image: url(../img/white.jpg);
 		background-repeat: no-repeat;
@@ -242,7 +242,7 @@ input[type=submit] {
 	}
 }
 
-@media (max-width:601px) {
+@media only screen and (max-width:601px) {
 
 	#breadCrumbs,
 	div.crumbBorder {
@@ -254,7 +254,7 @@ input[type=submit] {
 
 }
 
-@media (min-width:601px) {
+@media only screen and (min-width:601px) {
 
 	#breadCrumbs,
 	div.crumbBorder {
