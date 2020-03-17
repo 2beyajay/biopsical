@@ -90,11 +90,13 @@ input[type=submit] {
 	color: #000000;
 }
 
+/* contact details styling */
 #contact {
 	display: none;
 	margin: auto;
 }
 
+/* Print text styling */
 #print {
 	display: none;
 }
@@ -122,6 +124,7 @@ input[type=submit] {
 	color: #f8f8f8;
 }
 
+/* History blocks styling */
 .crumbBorder {
 	margin-left: 25px;
 	border: 0px solid black;
@@ -130,7 +133,6 @@ input[type=submit] {
 	box-sizing: border-box;
 	display: inline;
 	padding: 0px 20px;
-
 	/* padding: 9px; */
 	border-radius: 7px;
 	letter-spacing: 1.25px;
@@ -138,9 +140,15 @@ input[type=submit] {
 	text-align: center;
 	display:inline-block;
 	align-items: center;
-	
+	margin-bottom: 1%;
 }
 
+/* deactivate the foundation.min.css floating */
+.columns{
+	float: none !important;
+}
+
+/* history blocks text */
 .crumbBorder p {
 	margin-bottom: 0;
 	
@@ -161,7 +169,7 @@ input[type=submit] {
 	/* margin: 0 auto; */
 }
 
-
+/* information button style */
 .i-button {
 	width: 25px;
 	height: 25px;
@@ -175,14 +183,11 @@ input[type=submit] {
 	right: 5px;
 }
 
+/* reveal modal box style */
 .reveal {
 	margin: 0 auto;
 	position: relative;
 
-}
-
-#exampleModal1 {
-	margin: 0 auto;
 }
 
 /* highlighting the important part of the result */
@@ -197,6 +202,7 @@ input[type=submit] {
 	transform: scale(1.8);
 }
 
+/* reset and print button styling */
 #printReset{
 	display: inline-flex;
     margin: 0 auto;
