@@ -136,14 +136,12 @@ input[type=submit] {
 	letter-spacing: 1.25px;
 	color: white;
 	text-align: center;
-	display:inline-block;
+	display: flex;
 	align-items: center;
-
 }
 
 .crumbBorder p {
 	margin-bottom: 0;
-	
 }
 
 /* reset button svg currently working on it */
@@ -231,7 +229,6 @@ input[type=submit] {
 		margin-bottom: 5px;
 		text-align: center;
 	}
-
 }
 
 @media (min-width:601px) {
