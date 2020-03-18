@@ -78,6 +78,7 @@ class Trials {
         } else {
             //creating the breadCrumb trail
             let divCrumb = document.createElement("div");
+            let theCorrect = document.createElement("img");
             let theCrumbP = document.createElement("p");
             theCrumbP.innerText = nodesClickedName;
             theCorrect.setAttribute("src", "img/correct.png");
