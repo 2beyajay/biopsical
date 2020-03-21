@@ -3,7 +3,7 @@
 	text-align: "center";
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
-	color: #1d1d1d;
+	color: #7e7e7e;
 	font-size: 1.75em;
 	margin-top: 50px;
 }
@@ -14,6 +14,12 @@ body {
 	background-repeat: repeat;
 	background-size: cover;
 	text-align: center;
+	background-position: center;
+}
+
+.reveal-overlay h1{
+	font-family: "Crimson Text, serif !important";
+	font-size: 1.75em;
 }
 
 /* header style */
@@ -72,31 +78,28 @@ input[type=button] {
 
 /* submit button styles */
 input[type=submit] {
-	background-color: rgb(235, 190, 10);
-	color: black;
+	background-color: #25aae1;
+	color: #f8f8f8;
 	font-size: 15pt;
 	height: 60px;
 	text-align: center;
 	display: block;
 	margin: 0 auto;
 	font-weight: 500;
-	padding: auto;
+	
 }
 
 /* intial options styling */
 #initialOptions,
 #nodesHere {
-	display: flex;
 	color: #000000;
 }
 
-/* contact details styling */
 #contact {
 	display: none;
 	margin: auto;
 }
 
-/* Print text styling */
 #print {
 	display: none;
 }
@@ -105,13 +108,14 @@ input[type=submit] {
 #nodesHere input:focus {
 	background-color: #707070;
 	color: #f8f8f8;
+	border: none;
 }
 
 /* input type of option and nodes styling */
 #initialOptions input,
 #nodesHere input {
 	background-color: #f8f8f8;
-	box-shadow: #494949 0px 0px 5px;
+	box-shadow: #7e7e7e 0px 0px 5px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
 	color: #000000;
@@ -120,44 +124,54 @@ input[type=submit] {
 /* hover to options on surveys */
 #initialOptions input:hover,
 #nodesHere input:hover {
-	background-color: #3a2828;
+	background-color: #707070;
 	color: #f8f8f8;
+	border: none;
 }
 
-/* History blocks styling */
+#breadCrumbs{
+	margin-top: 40px;
+}
+
 .crumbBorder {
+	display: flex;
+	align-items: center;
 	margin-left: 25px;
 	border: 0px solid black;
 	background-color: #808080;
 	border: #808080 2px solid;
 	box-sizing: border-box;
-	display: inline-flex !important;
+	display: inline-flex;
 	padding: 0px 20px;
 	/* padding: 9px; */
 	border-radius: 7px;
 	letter-spacing: 1.25px;
 	color: white;
-	text-align: center;
-	display:inline-block;
-	align-items: center;
-	margin-bottom: 1%;
+}
+
+.crumbBorder p::before{
+	content: url(../img/correct.png);
+	position: relative;
+	top: 7px;
+	left: -10px;
+	width: 25px;
+	height: 25px;
 }
 
 /* deactivate the foundation.min.css floating */
-.columns{
+.columns {
 	float: none !important;
 }
 
 /* history blocks text */
 .crumbBorder p {
-	margin-bottom: 0;
-	padding-left: 10px;
+	margin-bottom: 5px;
 }
 
 /* reset button svg currently working on it */
 #reset {
-	height: 50px !important;
-	width: 50px;
+	height: 30px !important;
+	width: 30px;
 	text-align: center;
 	background-image: url('../img/refresh.svg');
 	background-repeat: no-repeat;
@@ -165,11 +179,11 @@ input[type=submit] {
 	color: rgb(255, 255, 255);
 	border: none;
 	padding: 0em 0em;
-	margin-top: 5px !important;
-	/* margin: 0 auto; */
+	margin-top: 20px !important;
+	margin: 0 auto;
 }
 
-/* information button style */
+
 .i-button {
 	width: 25px;
 	height: 25px;
@@ -180,14 +194,17 @@ input[type=submit] {
 	color: rgb(255, 255, 255);
 	border-radius: 60%;
 	top: 10px;
-	right: 5px;
+	right: 5px
 }
 
 /* reveal modal box style */
 .reveal {
 	margin: 0 auto;
 	position: relative;
+}
 
+#exampleModal1 {
+	margin: 0 auto;
 }
 
 /* highlighting the important part of the result */
@@ -198,18 +215,18 @@ input[type=submit] {
 
 /* Animation for .i-button */
 .i-button:hover {
-	transition: all .2s ease-in-out;
-	transform: scale(1.8);
+	transition: .1s;
+	transform: scale(1.2);
 }
 
-/* reset and print button styling */
-#printReset{
-	display: inline-flex;
-    margin: 0 auto;
+#btnSubmit {
+	display: flex;
+	flex-direction: column;
 }
+
 
 /* Media query for mobile view */
-@media only screen and (max-width:601px) {
+@media (max-width:600px) {
 	body {
 		background-image: url(../img/white.jpg);
 		background-repeat: no-repeat;
@@ -222,47 +239,72 @@ input[type=submit] {
 		display: block;
 		color: #000000;
 	}
-	p{
+
+	#title {
+		font-size: 1.4em;
+	}
+
+	p {
 		text-align: center;
 	}
+
+	#nodesHere {
+		padding-bottom: 0;
+	}
+
+	#btnSubmit{
+		margin-bottom: 50px;
+	}
+
 	input[type=button] {
-		
+
 		margin: 0 auto;
 		margin-right: 1%;
 		margin-bottom: 7%;
 		height: 50px;
 		text-align: center;
-		width: 320px;	
+		width: 80%;
 		padding: auto;
 		font-size: 15pt;
 		border: none;
 		font-family: 'Raleway', sans-serif;
 	}
-	#initialOptions input{
+
+	#initialOptions input {
 		margin-bottom: 15%;
 	}
-	#breadCrumbs,
-	div.crumbBorder {
-		width: auto;
-		margin-bottom: 5px;
-		text-align: center;
+
+	.i-button {
+		top: -10px;
+		left: -10%;
 	}
-}
 
-@media only screen and (min-width:601px) {
 
-	#breadCrumbs,
-	div.crumbBorder {
-		width: auto;
+	@media (max-width:601px) {
+
+		#breadCrumbs,
+		div.crumbBorder {
+			width: auto;
+			margin-bottom: 5px;
+			text-align: center;
+		}
 	}
-}
 
-h1 {
-	font-family: 'Crimson Text', serif !important;
-}
+	@media (min-width:601px) {
 
-div#result {
-	font-family: 'Lemonada', cursive;
-	font-size: 15px;
+		#breadCrumbs,
+		div.crumbBorder {
+			width: auto;
+			float: left;
+		}
+	}
 
+	h1 {
+		font-family: 'Crimson Text', serif !important;
+	}
+
+	div#result {
+		font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+		font-size: 17px;
+	}
 }

@@ -40,25 +40,33 @@ class Trials {
 
         // array to hold all the information about the clicked node
         let nodeClickedInfo;
+        let theDocumentWidth = window.innerWidth;
+        let theBackground = "url('img/background.svg')";
+        console.log(theDocumentWidth);
+        if (theDocumentWidth <= 600) {
+            theBackground = "";
+        }
+        
         switch (cancertype) {
             case 0:
                 nodeClickedInfo = this.lungNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('img/background.svg')";
+                document.body.style.backgroundImage = theBackground;
+
 
                 break;
             case 1:
                 nodeClickedInfo = this.skinNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('img/background.svg')";
+                document.body.style.backgroundImage = theBackground;
 
                 break;
             case 2:
                 nodeClickedInfo = this.breastNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('./img/background.svg')";
+                document.body.style.backgroundImage = theBackground;
 
                 break;
             case 3:
                 nodeClickedInfo = this.urinaryNodes.filter(clickedNode => clickedNode.node == nodeClicked);
-                document.body.style.backgroundImage = "url('./img/background.svg')";
+                document.body.style.backgroundImage = theBackground;
 
                 break;
         }
@@ -78,11 +86,11 @@ class Trials {
         } else {
             //creating the breadCrumb trail
             let divCrumb = document.createElement("div");
-            let theCorrect = document.createElement("img");
+            // let theCorrect = document.createElement("img");
             let theCrumbP = document.createElement("p");
             theCrumbP.innerText = nodesClickedName;
-            theCorrect.setAttribute("src", "img/correct.png");
-            divCrumb.append(theCorrect);
+            // theCorrect.setAttribute("src", "img/correct.png");
+            // divCrumb.append(theCorrect);
             divCrumb.append(theCrumbP);
             divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
@@ -95,7 +103,7 @@ class Trials {
                 //using the loop, create the next set of buttons that will appear on the screen
                 let createdNode = document.createElement("input");
                 createdNode.type = "button";
-                createdNode.classList.add("large-6");
+                createdNode.classList.add("large-6", "small-6");
                 // using gettingNodeName, we pass that information to createdNode.value so that it has the correct name
                 createdNode.value = this.gettingNodeName(element);
                 
