@@ -80,6 +80,8 @@ class Trials {
             let divCrumb = document.createElement("div");
             let theCrumbP = document.createElement("p");
             theCrumbP.innerText = nodesClickedName;
+            theCorrect.setAttribute("src", "img/correct.png");
+            divCrumb.append(theCorrect);
             divCrumb.append(theCrumbP);
             divCrumb.classList.add("crumbBorder");
             crumbs.append(divCrumb);
