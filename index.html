@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lakeridge Health</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lemonada|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+
+<!-- body part start -->
+
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="img/logo.png" alt="company logo" href="index.html">
+        </a>
+    </header>
+
+    <!-- main section with buttons -->
+    <div class="row">
+        <div class="large-12 medium-12 small-12 columns ">
+            <h5 id="mainTitle">Clinical Trial Eligibility</h5>
+
+            <h6 id="print" class="print">Please Print This Page</h6>
+            <div id="breadCrumbs"></div>
+            
+                <div class="large-12 medium-12 small-14 " id="breadCrumbs"></div>
+            
+
+            <h4 id="title">Please select one of the following</h4>
+            <h2 id="finalResult"></h2>
+        </div>
+        <!-- container for javascript buttons(options) -->
+        <div id="nodesHere" class="large-8 medium-4 small-10 columns">
+        </div>
+        <div id="contact" class="large-4 medium-4 small-6 print">
+            <label for="name">Print Name Here:</label>
+            <input type="text" disabled>
+            <label for="name">Print Contact Details Here:</label>
+            <input type="text" disabled>
+        </div>
+
+        <!-- first page static buttons -->
+        <div id="initialOptions" class="large-12 medium-12 small-12 columns">
+            <input type="button" value="Breast Cancer" id="breast" data-number="0"><br>
+            <input type="button" value="Genetio/Urinary Cancer" id="urinary" data-number="0"><br>
+            <input type="button" value="Lung Cancer" id="lung" data-number="0"><br>
+            <input type="button" value="Cutaneous Onc Cancer" id="skin" data-number="0"><br>
+        </div>
+
+
+        <br><br>
+        <!-- submit button section -->
+        <div class="large-12 medium-12 small-12 columns" id="btnSubmit">
+            <input type="submit" class="button hide" id="submit" value="Confirm">
+            <input type="submit" value="Print Page" class="button" id="printPage">
+            <input class="button hide" id="reset">
+
+        </div>
+    </div>
+
+
+    <div class="reveal" id="infoModal" data-reveal>
+        <h1></h1>
+        <p class="lead">
+            <div id="result">
+            </div>
+        </p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    </div>
+
+
+
+
+</body>
+<!-- body end -->
+
+<!--external javascripts  -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+</html>
