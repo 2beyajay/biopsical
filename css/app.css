@@ -3,7 +3,7 @@
 	text-align: "center";
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
-	color: #7e7e7e;
+	color: #484848;
 	font-size: 1.75em;
 	margin-top: 50px;
 }
@@ -130,12 +130,13 @@ input[type=submit] {
 }
 
 #breadCrumbs{
-	margin-top: 40px;
+	margin-top: 25px;
 }
 
 .crumbBorder {
 	display: flex;
 	align-items: center;
+	margin-top: 15px;
 	margin-left: 25px;
 	border: 0px solid black;
 	background-color: #808080;
